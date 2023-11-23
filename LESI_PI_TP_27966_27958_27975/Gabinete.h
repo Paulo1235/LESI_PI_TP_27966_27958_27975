@@ -7,7 +7,8 @@ DATA : HOJE
 Nutricionistas
 */
 #pragma once
-
+#include <stdio.h>
+#pragma warning (disable: 4996)
 
 #pragma region Paciente
 typedef struct Paciente {
