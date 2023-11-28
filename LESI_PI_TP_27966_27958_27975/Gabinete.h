@@ -16,6 +16,8 @@ Nutricionistas
 
 #define k 200
 
+#define DEBUG 1
+
 
 #pragma region Paciente
 typedef struct Paciente {
