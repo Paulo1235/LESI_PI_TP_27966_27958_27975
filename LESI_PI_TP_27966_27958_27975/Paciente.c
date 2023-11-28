@@ -7,4 +7,18 @@ DATA : HOJE
 Nutricionistas
 */
 
-int LeDadosPaciente
+#include "Gabinete.h"
+/*
+* devolve quantos pacientes leu
+*/
+int LeDadosPaciente(char nomeFicheiro[], Paciente pacientes[], int maximoPaciente) {
+	FILE* fp = fopen(nomeFicheiro, "r");
+	int i = 0;
+	while (1)
+	{
+		fscanf(fp, "%d;%[^;]%s", &pacientes->numP, pacientes[i].nome, pacientes[i].tel);
+		i++;
+		if (feof(fp)) break;
+	}
+	fclose(fp); return i
+}
