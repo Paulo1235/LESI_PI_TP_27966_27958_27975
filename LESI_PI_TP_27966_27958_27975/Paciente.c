@@ -7,12 +7,4 @@ DATA : HOJE
 Nutricionistas
 */
 
-#include "Gabinete.h"
-
-int main()
-{
-    printf("Hello world");
-    return 0;
-
-    Paciente p[k];
-}
+int LeDadosPaciente

@@ -10,17 +10,25 @@ Nutricionistas
 #include <stdio.h>
 #pragma warning (disable: 4996)
 
+/*
+* #define algumas
+*/
+
+#define k 200
+
+
 #pragma region Paciente
 typedef struct Paciente {
-	int num;
+	int numP;
 	char nome[20];
-	int tel;
+	char  tel[13];
+	InfDieta dieta[k]
 }Paciente;
 #pragma endregion
 
 #pragma region Informação da dieta
 typedef struct InfDieta {
-	int numPaciente;
+	int numP;
 	char data[10];
 	char refeicao[50];
 	char alimento[50];
