@@ -15,7 +15,7 @@ Nutricionistas
 */
 
 #define k 200
-
+#define N 10
 #define DEBUG 1
 
 
@@ -23,7 +23,7 @@ Nutricionistas
 typedef struct Paciente {
 	int numP;
 	char nome[20];
-	char  tel[13];
+	char  tel[3];
 	InfDieta dieta[k]
 }Paciente;
 #pragma endregion

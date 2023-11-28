@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GereFicheiros.c" />
     <ClCompile Include="Paciente.c" />
     <ClCompile Include="Main.c" />
   </ItemGroup>
