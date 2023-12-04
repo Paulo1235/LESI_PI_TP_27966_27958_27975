@@ -50,3 +50,15 @@ typedef struct PlNutricionais {
 	char calMax[15];
 }PlNutricionais;
 #pragma endregion
+
+#pragma region TabelaPacientes
+typedef struct TabelaPacientes {
+	int numeroPaciente;
+	char nome[50];
+	char tipoRefeicao[20];
+	char dataInicio[12];
+	char dataFim[12];
+	int caloriasMinimo;
+	int caloriasMaximo;
+	int consumoRealizado;
+} TabelaPacientes;

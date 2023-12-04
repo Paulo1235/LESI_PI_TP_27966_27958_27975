@@ -151,3 +151,15 @@ double calcularMediaCalorias(int calorias[MAX_PACIENTES][MAX_DIAS], int numPacie
         }
     }
 }
+
+//Exercicio 6
+
+// Função para exibir a tabela
+void exibirTabela(Paciente* pacientes, int numPacientes) {
+    for (int i = 0; i < numPacientes; i++) {
+        printf("| %-15d | %-20s | %-15s | %-12s | %-12s | %-15d | %-15d | %-20d |\n",
+            pacientes[i].numeroPaciente, pacientes[i].nome, pacientes[i].tipoRefeicao,
+            pacientes[i].dataInicio, pacientes[i].dataFim, pacientes[i].caloriasMinimo,
+            pacientes[i].caloriasMaximo, pacientes[i].consumoRealizado);
+    }
+}

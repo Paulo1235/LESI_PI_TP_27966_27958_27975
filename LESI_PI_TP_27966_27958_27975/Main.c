@@ -74,4 +74,25 @@ int main()
     }
 
     return 0;
+
+    //Pergunta 6 
+
+        // Defina o número de pacientes (isso pode ser dinâmico em um sistema real)
+    int numPacientes = 3;////CONTAR AS LINHAS DOS FICHEIRO
+    printf("| %-15s | %-20s | %-15s | %-12s | %-12s | %-15s | %-15s | %-20s |\n",
+        "Num Paciente", "Nome", "Tipo Refeicao", "Data Inicio", "Data Fim", "Cal Minimo", "Cal Maximo", "Consumo Realizado");
+    printf("|-----------------|----------------------|------------------|------------------|------------------|----------------------|----------------------|-------------------------|\n");
+
+    // Crie um array de pacientes
+    Paciente pacientes[numPacientes];
+
+    // Popule o array com dados fictícios (substitua isso pelos dados reais do seu sistema)
+
+    ///ALTERAR PARA IR BUSCAR AO FICHEIRO
+    pacientes[0] = (Paciente){ 1, "Paciente1", "Almoco", "01/01/2023", "01/01/2023", 500, 800, 700 };
+    pacientes[1] = (Paciente){ 2, "Paciente2", "Jantar", "01/01/2023", "01/01/2023", 600, 900, 750 };
+    pacientes[2] = (Paciente){ 3, "Paciente3", "Cafe da Manha", "01/01/2023", "01/01/2023", 400, 700, 500 };
+
+    // Exiba a tabela
+    exibirTabela(pacientes, numPacientes);
 }
