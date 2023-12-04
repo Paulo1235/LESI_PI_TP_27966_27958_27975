@@ -18,6 +18,9 @@ Nutricionistas
 #define N 10
 #define DEBUG 1
 
+#define MAX_PACIENTES 10
+#define MAX_DIAS 7
+
 
 #pragma region Paciente
 typedef struct Paciente {
