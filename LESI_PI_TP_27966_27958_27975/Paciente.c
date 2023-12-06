@@ -105,7 +105,7 @@ void listarPacientesForaDoIntervalo(char nomeArquivo, int limiteInferior, int li
 
 //Resposta à alinea 4           Ver a questão se é sugerido a data de inicio e fim
 // Função para buscar o plano nutricional de um paciente para uma refeição em um determinado período
-void buscarPlanoNutricional(char nomeArquivo, char paciente, char refeicao, char dataInicio, char dataFim) {
+void buscarPlanoNutricional(char nomeArquivo,  char refeicao, char dataInicio, char dataFim) {
     FILE* arquivo = fopen(nomeArquivo, "r");
 
     if (arquivo == NULL) {
@@ -154,12 +154,51 @@ double calcularMediaCalorias(int calorias[MAX_PACIENTES][MAX_DIAS], int numPacie
 
 //Exercicio 6
 
-// Função para exibir a tabela
-void exibirTabela(Paciente* pacientes, int numPacientes) {
-    for (int i = 0; i < numPacientes; i++) {
-        printf("| %-15d | %-20s | %-15s | %-12s | %-12s | %-15d | %-15d | %-20d |\n",
-            pacientes[i].numeroPaciente, pacientes[i].nome, pacientes[i].tipoRefeicao,
-            pacientes[i].dataInicio, pacientes[i].dataFim, pacientes[i].caloriasMinimo,
-            pacientes[i].caloriasMaximo, pacientes[i].consumoRealizado);
+//Contar Pacientes
+int contarPacientes(char nomeArquivo)
+{
+    FILE* arquivo= fopen(nomeArquivo, "r");// Abre o arquivo para leitura
+    char nomeArquivo[] = nomeArquivo;  // Substitua pelo nome do seu arquivo
+    int contador = 0;
+    char caractere;
+
+    
+
+    // Verifica se o arquivo foi aberto com sucesso
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return -1;
     }
+
+    // Percorre o arquivo contando as linhas
+    while ((caractere = fgetc(arquivo)) != EOF) {
+        if (caractere == '\n') {
+            contador++;
+        }
+    }
+
+    // Verifica se a última linha não termina com quebra de linha
+    rewind(arquivo);  // Volta para o início do arquivo
+    if (contador > 0) {
+        fseek(arquivo, -1, SEEK_END);  // Move para o penúltimo caractere
+        if (fgetc(arquivo) != '\n') {
+            contador++;
+        }
+    }
+
+    // Fecha o arquivo
+    fclose(arquivo);
+
+    return contador;
 }
+
+
+// Função para exibir a tabela
+//void exibirTabela(Paciente* pacientes, int numPacientes) {
+//    for (int i = 0; i < numPacientes; i++) {
+//        printf("| %-15d | %-20s | %-15s | %-12s | %-12s | %-15d | %-15d | %-20d |\n",
+//            pacientes[i].numeroPaciente, pacientes[i].nome, pacientes[i].tipoRefeicao,
+//            pacientes[i].dataInicio, pacientes[i].dataFim, pacientes[i].caloriasMinimo,
+//            pacientes[i].caloriasMaximo, pacientes[i].consumoRealizado);
+//    }
+//}

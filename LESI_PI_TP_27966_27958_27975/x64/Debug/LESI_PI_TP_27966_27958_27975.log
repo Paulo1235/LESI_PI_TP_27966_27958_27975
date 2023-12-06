@@ -1,55 +1,80 @@
 ﻿  GereFicheiros.c
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(27,2): error C2061: erro de sintaxe: identificador 'InfDieta'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2146: erro de sintaxe: ')' ausente antes do identificador 'pacientes'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2061: erro de sintaxe: identificador 'pacientes'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2059: erro de sintaxe: ';'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,61): error C2059: erro de sintaxe: '['
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,82): error C2059: erro de sintaxe: ')'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2146: erro de sintaxe: ')' ausente antes do identificador 'paciente'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2061: erro de sintaxe: identificador 'paciente'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2059: erro de sintaxe: ';'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,62): error C2059: erro de sintaxe: '['
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,83): error C2059: erro de sintaxe: ')'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(47,18): warning C4047: 'função': 'const char *' difere em níveis de indireção de 'char'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(47,18): warning C4024: 'fopen': tipos diferentes para parâmetro formal e real 1
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(23,47): error C2065: 'Paciente': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(23,8): warning C4477: 'printf': a cadeia de formato '%d' requer um argumento do tipo 'int', mas um argumento variadic 1 tem o tipo 'size_t'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(23,8): message : considere usar '%zd' na cadeia de formato
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(25,10): error C2065: 'Paciente': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(25,10): error C2146: erro de sintaxe: ';' ausente antes do identificador 'p1'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(25,13): error C2065: 'p1': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(25,15): error C2059: erro de sintaxe: '{'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(29,12): error C2065: 'p1': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(29,29): error C2065: 'Paciente': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(33,10): error C2065: 'Paciente': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(33,10): error C2146: erro de sintaxe: ';' ausente antes do identificador 'p4'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(33,12): error C2065: 'p4': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(37,11): error C2065: 'p4': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(37,31): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(30,2): error C2061: erro de sintaxe: identificador 'InfDieta'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(21,11): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(21,11): error C2146: erro de sintaxe: ';' ausente antes do identificador 'p1'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(21,14): error C2065: 'p1': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(21,16): error C2059: erro de sintaxe: '{'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(25,13): error C2065: 'p1': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(25,30): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(29,11): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(29,11): error C2146: erro de sintaxe: ';' ausente antes do identificador 'p2'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(29,13): error C2065: 'p2': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(33,12): error C2065: 'p2': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(33,32): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(42,53): error C2146: erro de sintaxe: ')' ausente antes do identificador 'P'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(42,53): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(42,53): error C2061: erro de sintaxe: identificador 'P'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(42,53): error C2059: erro de sintaxe: ';'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(42,55): error C2059: erro de sintaxe: '['
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(42,56): error C2059: erro de sintaxe: ')'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(56,50): error C2146: erro de sintaxe: ')' ausente antes do identificador 'P'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(56,50): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(56,50): error C2061: erro de sintaxe: identificador 'P'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(56,50): error C2059: erro de sintaxe: ';'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(56,52): error C2059: erro de sintaxe: '['
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\GereFicheiros.c(56,53): error C2059: erro de sintaxe: ')'
   Paciente.c
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(27,2): error C2061: erro de sintaxe: identificador 'InfDieta'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2146: erro de sintaxe: ')' ausente antes do identificador 'pacientes'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2061: erro de sintaxe: identificador 'pacientes'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2059: erro de sintaxe: ';'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,61): error C2059: erro de sintaxe: '['
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,82): error C2059: erro de sintaxe: ')'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2146: erro de sintaxe: ')' ausente antes do identificador 'paciente'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2061: erro de sintaxe: identificador 'paciente'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2059: erro de sintaxe: ';'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,62): error C2059: erro de sintaxe: '['
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,83): error C2059: erro de sintaxe: ')'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(47,18): warning C4047: 'função': 'const char *' difere em níveis de indireção de 'char'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(47,18): warning C4024: 'fopen': tipos diferentes para parâmetro formal e real 1
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(30,2): error C2061: erro de sintaxe: identificador 'InfDieta'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2146: erro de sintaxe: ')' ausente antes do identificador 'pacientes'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2061: erro de sintaxe: identificador 'pacientes'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,51): error C2059: erro de sintaxe: ';'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,61): error C2059: erro de sintaxe: '['
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(14,82): error C2059: erro de sintaxe: ')'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2146: erro de sintaxe: ')' ausente antes do identificador 'paciente'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2081: 'Paciente': nome inválido na lista de parâmetros formais
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2061: erro de sintaxe: identificador 'paciente'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,53): error C2059: erro de sintaxe: ';'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,62): error C2059: erro de sintaxe: '['
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(28,83): error C2059: erro de sintaxe: ')'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(47,18): warning C4047: 'função': 'const char *' difere em níveis de indireção de 'char'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(47,18): warning C4024: 'fopen': tipos diferentes para parâmetro formal e real 1
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(75,21): warning C4047: 'função': 'const char *' difere em níveis de indireção de 'char'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(75,21): warning C4024: 'fopen': tipos diferentes para parâmetro formal e real 1
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(81,26): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(81,27): error C2059: erro de sintaxe: ')'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(85,25): warning C4477: 'fscanf': a cadeia de formato '%d' requer um argumento do tipo 'int *', mas um argumento variadic 2 tem o tipo 'char (*)[50]'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(85,25): message : considere usar '%hhd' na cadeia de formato
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(103,5): warning C4013: 'free' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(109,27): warning C4047: 'função': 'const char *' difere em níveis de indireção de 'char'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(109,27): warning C4024: 'fopen': tipos diferentes para parâmetro formal e real 1
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(119,91): error C2039: ' plano': não é um membro de 'PlNutricionais'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(45,16): message : consulte a declaração de 'PlNutricionais'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(119,28): warning C4473: 'fscanf' : não há argumentos suficientes transmitidos para a cadeia de caracteres de formato
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(119,28): message : espaços reservados e seus parâmetros esperam 3 argumentos variadic, mas 2 foram fornecidos
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(119,28): message : o argumento variadic 3 ausente é requerido pela cadeia de formato '%[^\n]'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(121,13): warning C4013: 'strcmp' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(125,79): error C2039: ' plano': não é um membro de 'PlNutricionais'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(45,16): message : consulte a declaração de 'PlNutricionais'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(125,20): warning C4473: 'printf' : não há argumentos suficientes transmitidos para a cadeia de caracteres de formato
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(125,20): message : espaços reservados e seus parâmetros esperam 3 argumentos variadic, mas 2 foram fornecidos
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(125,20): message : o argumento variadic 3 ausente é requerido pela cadeia de formato '%s'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(160,26): warning C4047: 'função': 'const char *' difere em níveis de indireção de 'char'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(160,26): warning C4024: 'fopen': tipos diferentes para parâmetro formal e real 1
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(161,10): error C2082: redefinição de parâmetro formal 'nomeArquivo'
   Main.c
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(27,2): error C2061: erro de sintaxe: identificador 'InfDieta'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,14): error C2065: 'Paciente': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,14): error C2146: erro de sintaxe: ';' ausente antes do identificador 'p'
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,16): error C2065: 'p': identificador não declarado
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,15): error C2109: subscrito requer tipo de matriz ou ponteiro
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(27,17): warning C4013: 'contarPacientesQueUltrapassaram' indefinido; assumindo extern retornando int
-C:\Users\Utilizador\OneDrive\Documentos\GitHub\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(44,5): warning C4013: 'listarPacientesForaDoIntervalo' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Gabinete.h(30,2): error C2061: erro de sintaxe: identificador 'InfDieta'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,14): error C2065: 'Paciente': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,14): error C2146: erro de sintaxe: ';' ausente antes do identificador 'p'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,16): error C2065: 'p': identificador não declarado
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(17,15): error C2109: subscrito requer tipo de matriz ou ponteiro
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(26,21): warning C4013: 'contarPacientesQueUltrapassaram' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(43,5): warning C4013: 'listarPacientesForaDoIntervalo' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(50,5): warning C4013: 'buscarPlanoNutricional' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(66,21): warning C4013: 'calcularMediaCalorias' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(81,9): error C2374: 'numPacientes': redefinição; várias inicializações
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(56,9): message : consulte a declaração de 'numPacientes'
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(81,24): warning C4013: 'contarPacientes' indefinido; assumindo extern retornando int
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(91,10): error C2374: 'nomeArquivo': redefinição; várias inicializações
+C:\IPCA\PI\Trabalho de Grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(22,10): message : consulte a declaração de 'nomeArquivo'
   Gerando Código...
