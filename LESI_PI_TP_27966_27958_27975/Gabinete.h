@@ -8,28 +8,15 @@ Nutricionistas
 */
 #pragma once
 #include <stdio.h>
+#include "Gerirficheiros.h"
 #pragma warning (disable: 4996)
 
-/*
-* #define algumas
-*/
-
-#define k 200
+#define k 20
 #define N 10
 #define DEBUG 1
 
 #define MAX_PACIENTES 10
 #define MAX_DIAS 7
-
-
-#pragma region Paciente
-typedef struct Paciente {
-	int numP;
-	char nome[20];
-	char  tel[3];
-	InfDieta dieta[k]
-}Paciente;
-#pragma endregion
 
 #pragma region Informação da dieta
 typedef struct InfDieta {
@@ -39,6 +26,15 @@ typedef struct InfDieta {
 	char alimento[50];
 	char calorias[50];
 }InfDieta;
+#pragma endregion
+
+#pragma region Paciente
+typedef struct Paciente {
+	int numP;
+	char nome[20];
+	char  tel[3];
+	//InfDieta dieta[k];
+}Paciente;
 #pragma endregion
 
 #pragma region Planos nutricionais
@@ -62,3 +58,9 @@ typedef struct TabelaPacientes {
 	int caloriasMaximo;
 	int consumoRealizado;
 } TabelaPacientes;
+#pragma endregion
+
+#pragma region Funcoes
+int ImportarPacientes(char nomeFicheiro[], Paciente paciente[]);
+void MostraArrayPaciente(Paciente x[], int tamanho);
+#pragma endregion

@@ -8,15 +8,35 @@ Nutricionistas
 */
 
 #include "Gabinete.h"
-
+#include "Gerirficheiros.h"
 int main()
 {
     printf("Hello world");
-    return 0;
-
     Paciente p[k];
 
+    int a = ImportarPacientes("Pacientes.txt", p);
+    
+    MostraArrayPaciente(p, a);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
     //Pergunta 2
 
     char nomeArquivo[] = "DietaDetalhada.txt";
@@ -120,5 +140,6 @@ int main()
     //        pacientes[i].numeroPaciente, pacientes[i].nome, pacientes[i].tipoRefeicao,
     //        pacientes[i].dataInicio, pacientes[i].dataFim, pacientes[i].caloriasMinimo,
     //        pacientes[i].caloriasMaximo, pacientes[i].consumoRealizado);
-    //}
+    //}*/
+return 0;
 }

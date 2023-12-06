@@ -12,10 +12,8 @@ Nutricionistas
 #include "Gabinete.h"
 #pragma warning (disable: 4996)
 
-
-int Binarios()
-{
 #pragma region FICHEIROS_BIN
+/*int Binarios() {
 
 	FILE* fp;
 	Paciente p1 = { 12, "Joao", 123 };
@@ -34,38 +32,11 @@ int Binarios()
 	}
 	fclose(fp);
 
-}
+}*/
 #pragma endregion
 
 
-#pragma region GuardarFicheirosBin
-int GuardarFicheirosBin(char NomeFicheiro, Paciente P[]) {
 
-	FILE* fp = fopen("Paciente.dat", "wb"); //em qual ficheiro escreve? no Paciente.dat criado nos ficheiros BIN??
-	if (fp != NULL) {
-		for (int i = 0; i < 2; i++) {
-			fwrite(&P[i], 1, sizeof(Paciente), fp);
-		}
-	}
-	fclose(fp);
-}
-#pragma endregion
-
-
-#pragma region LoadFicheirosBin
-int LoadFicheirosBin(char NomeFicheiro, Paciente P[]) {
-
-	Paciente P[N];
-	FILE* fp = fopen("Turma.dat", "rb");
-	if (fp != NULL) {
-		int i = 0;
-
-		while (fread(&P[i], 1, sizeof(Paciente), fp)) {
-			i++;
-		}
-	}
-}
-#pragma endregion
 
 
 

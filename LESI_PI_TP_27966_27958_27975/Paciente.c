@@ -4,47 +4,80 @@ Bruno Dantas - a27958@alunos.ipca.pt
 Diogo Abreu - a27975@alunos.ipca.pt
 Paulo Gonçalves - a27966@alunos.ipca.pt
 DATA : HOJE
-Nutricionistas
+Funcoes do Paciente
 */
 
 #include "Gabinete.h"
-/*
-* devolve quantos pacientes leu
-*/
-int LeDadosPaciente(char nomeFicheiro[], Paciente pacientes[], int maximoPaciente) {
+#include "Gerirficheiros.h"
+#pragma region ImportarPacientes
+int ImportarPacientes(char nomeFicheiro[], Paciente paciente[]) {
 	FILE* fp = fopen(nomeFicheiro, "r");
 	int i = 0;
 	while (1)
 	{
-		fscanf(fp, "%d;%[^;]%s", &pacientes->numP, pacientes[i].nome, pacientes[i].tel);
-		i++;
-		if (feof(fp)) break;
-	}
-	fclose(fp); return i;
-}
-
-//Proposta solução alínea 1 do trabalho prático
-
-int ImportarPacientes(char nomeFicheiro[], Paciente paciente[], int maximoPaciente)
-{
-	FILE* fp = fopen(nomeFicheiro, "r");
-	int i = 0;
-	while (1 && i<maximoPaciente)
-	{
-		fscanf(fp, "%d;%[^;]%s", &paciente[i].numP, paciente[i].nome, paciente[i].tel);
+		fscanf(fp, "%d;%[^;];%s", &paciente[i].numP, paciente[i].nome, paciente[i].tel); // erro ;988768565
 		i++;
 		if (feof(fp))break;
 			
 	}	fclose(fp); return i;
 }
+#pragma endregion
 
+#pragma region MostrarArray
+/// <summary>
+/// Mostra o Array no Ecra
+/// </summary>
+/// <param name="x">Array fornecido</param>
+/// <param name="tamanho">Tamanho do array</param>
+void MostraArrayPaciente(Paciente x[], int tamanho) {
+
+    for (int i = 0; i < tamanho; i++) {
+        printf("\n//////////////////////////////////////////////\n");
+        printf("array[%d].numP = %d\n", i, x[i].numP);
+        printf("array[%d].nome = %s\n", i, x[i].nome);
+        printf("array[%d].tel = %s\n", i, x[i].tel);
+    }
+};
+#pragma endregion
+
+
+#pragma region GuardarFicheirosBin 
+int GuardarFicheirosBin(char NomeFicheiro, Paciente P[]) {
+
+    FILE* fp = fopen("Paciente.dat", "wb"); //em qual ficheiro escreve? no Paciente.dat criado nos ficheiros BIN??
+    if (fp != NULL) {
+        for (int i = 0; i < 2; i++) {
+            fwrite(&P[i], 1, sizeof(Paciente), fp);
+        }
+    }
+    fclose(fp);
+} //O ficheiros binario é so um ou 3?
+#pragma endregion
+
+
+#pragma region LoadFicheirosBin
+int LoadFicheirosBin(char NomeFicheiro, Paciente P[]) {
+    FILE* fp = fopen("Turma.dat", "rb");
+    if (fp != NULL) {
+        int i = 0;
+
+        while (fread(&P[i], 1, sizeof(Paciente), fp)) {
+            i++;
+        }
+    }
+}
+#pragma endregion
+
+
+
+
+
+/*
 //2. Função para contar o número de pacientes que ultrapassaram uma quantidade de calorias
 int contarPacientesQueUltrapassaram(char nomeArquivo, int limiteCalorias) {
-	FILE* arquivo;
+	FILE* arquivo = fopen(nomeArquivo, "r"); // Abre o arquivo em modo de leitura
 	int calorias, pacientesQueUltrapassaram = 0;
 
-	// Abre o arquivo em modo de leitura
-	arquivo = fopen(nomeArquivo, "r");
 
 	// Lê os dados do arquivo e conta os pacientes que ultrapassaram o limite de calorias
 	while (fscanf(arquivo, "%d", &calorias) == 1) {
@@ -201,4 +234,4 @@ int contarPacientes(char nomeArquivo)
 //            pacientes[i].dataInicio, pacientes[i].dataFim, pacientes[i].caloriasMinimo,
 //            pacientes[i].caloriasMaximo, pacientes[i].consumoRealizado);
 //    }
-//}
+//}*/
