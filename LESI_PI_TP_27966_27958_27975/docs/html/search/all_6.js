@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['main_2ec_0',['Main.c',['../Main_8c.html',1,'']]],
+  ['mediacalorias_1',['mediacalorias',['../structMediacalorias.html',1,'Mediacalorias'],['../Cabe_xC3_xA7alho_8h.html#aecef36a43b4a7cc036bd3ff9ef59185a',1,'Mediacalorias:&#160;Cabeçalho.h']]],
+  ['mediacalorias_2ec_2',['MediaCalorias.c',['../MediaCalorias_8c.html',1,'']]],
+  ['mostraarrayinfdieta_3',['mostraarrayinfdieta',['../Cabe_xC3_xA7alho_8h.html#a310d9182617f1552aceccc4c83a81f2c',1,'MostraArrayInfDieta(InfDieta x[], int tamanho):&#160;Dieta.c'],['../Dieta_8c.html#a310d9182617f1552aceccc4c83a81f2c',1,'MostraArrayInfDieta(InfDieta x[], int tamanho):&#160;Dieta.c']]],
+  ['mostraarraymediacalorias_4',['mostraarraymediacalorias',['../Cabe_xC3_xA7alho_8h.html#ae3dc443f8e8dd8f55204828c3a2329f8',1,'MostraArrayMediacalorias(Mediacalorias x[], int tamanho):&#160;MediaCalorias.c'],['../MediaCalorias_8c.html#ae3dc443f8e8dd8f55204828c3a2329f8',1,'MostraArrayMediacalorias(Mediacalorias x[], int tamanho):&#160;MediaCalorias.c']]],
+  ['mostraarraypaciente_5',['mostraarraypaciente',['../Cabe_xC3_xA7alho_8h.html#ab72e6e7d3d2f5a8b5e60108200f34305',1,'MostraArrayPaciente(Paciente x[], int tamanho):&#160;Paciente.c'],['../Paciente_8c.html#ab72e6e7d3d2f5a8b5e60108200f34305',1,'MostraArrayPaciente(Paciente x[], int tamanho):&#160;Paciente.c']]],
+  ['mostraarrayplnutricionais_6',['mostraarrayplnutricionais',['../Cabe_xC3_xA7alho_8h.html#a95f586c162505fe0ef5afc91efa28854',1,'MostraArrayPlNutricionais(PlNutricionais x[], int tamanho):&#160;PlNutricionais.c'],['../PlNutricionais_8c.html#a95f586c162505fe0ef5afc91efa28854',1,'MostraArrayPlNutricionais(PlNutricionais x[], int tamanho):&#160;PlNutricionais.c']]],
+  ['mostraplnutricional_7',['mostraplnutricional',['../Cabe_xC3_xA7alho_8h.html#a038f15d4b8f97b690c22f25f190cb629',1,'MostraPlNutricional(PlNutricionais x[], int instancia):&#160;PlNutricionais.c'],['../PlNutricionais_8c.html#a038f15d4b8f97b690c22f25f190cb629',1,'MostraPlNutricional(PlNutricionais x[], int instancia):&#160;PlNutricionais.c']]],
+  ['mostrarpaciente_8',['mostrarpaciente',['../Cabe_xC3_xA7alho_8h.html#a83129475aaa749948b881d270eaf532e',1,'MostrarPaciente(Paciente x[], int posicao):&#160;Paciente.c'],['../Paciente_8c.html#a83129475aaa749948b881d270eaf532e',1,'MostrarPaciente(Paciente x[], int posicao):&#160;Paciente.c']]],
+  ['mostrartabela_9',['mostrartabela',['../Cabe_xC3_xA7alho_8h.html#a8b37b780f65d021b4b13b9489f8c37f9',1,'MostrarTabela(int Npac, TabelaPacientes tbpacientes[]):&#160;Tabela.c'],['../Tabela_8c.html#a8b37b780f65d021b4b13b9489f8c37f9',1,'MostrarTabela(int Npac, TabelaPacientes tbpacientes[]):&#160;Tabela.c']]]
+];

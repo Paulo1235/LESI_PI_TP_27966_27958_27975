@@ -1,0 +1,17 @@
+﻿  Dieta.c
+  MediaCalorias.c
+  Paciente.c
+  Main.c
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(22,28): warning C4028: o parâmetro formal 1 é diferente da declaração
+  PlNutricionais.c
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(81,19): warning C4133: 'função': tipos incompatíveis - de 'Paciente [20]' para 'InfDieta *'
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(102,19): warning C4133: 'função': tipos incompatíveis - de 'Paciente [20]' para 'InfDieta *'
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Main.c(136,19): warning C4133: 'função': tipos incompatíveis - de 'Paciente [20]' para 'InfDieta *'
+  Tabela.c
+  Gerando Código...
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Tabela.c(71,1): warning C4716: 'GerarTabela': deve retornar um valor
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\PlNutricionais.c(31,1): warning C4716: 'IniciPlNutricionais': deve retornar um valor
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\PlNutricionais.c(126,1): warning C4716: 'LoadFicheirosPlNutricionaisBin': deve retornar um valor
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(114,1): warning C4715: 'LoadFicheirosBin': nem todos os caminhos de controle retornam um valor
+C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Dieta.c(109,1): warning C4716: 'LoadFicheirosDietaBin': deve retornar um valor
+  LESI_PI_TP_27966_27958_27975.vcxproj -> C:\IPCA\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\x64\Debug\LESI_PI_TP_27966_27958_27975.exe

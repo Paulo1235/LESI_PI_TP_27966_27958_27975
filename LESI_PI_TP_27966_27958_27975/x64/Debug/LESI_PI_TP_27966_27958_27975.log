@@ -1,4 +1,3 @@
-﻿  Paciente.c
-C:\Ipca\Programacao_imperativa\Trabalho_de_grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(54): warning C4716: 'GuardarFicheirosBin': deve retornar um valor
-C:\Ipca\Programacao_imperativa\Trabalho_de_grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\Paciente.c(68): warning C4716: 'LoadFicheirosBin': deve retornar um valor
-  LESI_PI_TP_27966_27958_27975.vcxproj -> C:\Ipca\Programacao_imperativa\Trabalho_de_grupo\LESI_PI_TP_27966_27958_27975\LESI_PI_TP_27966_27958_27975\x64\Debug\LESI_PI_TP_27966_27958_27975.exe
+﻿  Tabela.c
+C:\Ipca\Programacao_imperativa\trab\d-03\LESI_PI_TP_27966_27958_27975\Tabela.c(69): warning C4716: 'GerarTabela': deve retornar um valor
+  LESI_PI_TP_27966_27958_27975.vcxproj -> C:\Ipca\Programacao_imperativa\trab\d-03\LESI_PI_TP_27966_27958_27975\x64\Debug\LESI_PI_TP_27966_27958_27975.exe

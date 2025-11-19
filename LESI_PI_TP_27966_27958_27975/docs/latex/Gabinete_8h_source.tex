@@ -1,0 +1,66 @@
+\doxysection{C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Gabinete.h}
+\hypertarget{Gabinete_8h_source}{}\label{Gabinete_8h_source}\mbox{\hyperlink{Gabinete_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ warning\ (disable:\ 4996)}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ k\ 20}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ N\ 10}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ DEBUG\ 1}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#define\ LimiteCalorias\ 100}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ tamanhoDieta\ 5}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ tamanhopaciente\ 6}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#define\ tamanhoDietaDetalhada\ 3}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ tamanhoMediacalorias\ 3}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ MAX\_PACIENTES\ 10}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#define\ MAX\_DIAS\ 7}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#pragma\ region\ Informa{\ucr}{\ucr}o\ da\ dieta}}
+\DoxyCodeLine{00033\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structInfDieta}{InfDieta}}\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ numP;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{char}\ data[11];}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{char}\ refeicao[50];}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{char}\ alimento[50];}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ calorias;}
+\DoxyCodeLine{00039\ \}\mbox{\hyperlink{structInfDieta}{InfDieta}};}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#pragma\ region\ Paciente}}
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPaciente}{Paciente}}\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ numP;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[20];}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \ tel;}
+\DoxyCodeLine{00051\ \}\mbox{\hyperlink{structPaciente}{Paciente}};}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#pragma\ region\ Planos\ nutricionais}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ numPaciente;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{char}\ dataRefeicao[11];}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{char}\ refeicao[50];}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{int}\ calMinimas;}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{int}\ calMax;}
+\DoxyCodeLine{00065\ \}\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}};}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#pragma\ region\ TabelaPacientes}}
+\DoxyCodeLine{00073\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTabelaPacientes}{TabelaPacientes}}\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ numeroPaciente;}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[50];}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{char}\ tipoRefeicao[20];}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{char}\ dataInicio[12];}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{char}\ dataFim[12];}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{int}\ caloriasMinimo;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{int}\ caloriasMaximo;}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{int}\ consumoRealizado;}
+\DoxyCodeLine{00082\ \}\ \mbox{\hyperlink{structTabelaPacientes}{TabelaPacientes}};}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ }
+
+\end{DoxyCode}

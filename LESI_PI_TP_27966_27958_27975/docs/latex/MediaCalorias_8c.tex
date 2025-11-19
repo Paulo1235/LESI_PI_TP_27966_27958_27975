@@ -1,0 +1,114 @@
+\doxysection{Referência ao ficheiro C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Media\+Calorias.c}
+\hypertarget{MediaCalorias_8c}{}\label{MediaCalorias_8c}\index{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/MediaCalorias.c@{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/MediaCalorias.c}}
+
+
+Função no qual calcula a MNedia de Calorias de um paciente num determinado periodo.  
+
+
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include "{}Gabinete.\+h"{}}\newline
+{\ttfamily \#include "{}Cabeçalho.\+h"{}}\newline
+Diagrama de dependências de inclusão para Media\+Calorias.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{MediaCalorias_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{MediaCalorias_8c_acf812068f0cd71b9012cb3663c8690c7}{Inici\+Media\+Calorias}} (\mbox{\hyperlink{structMediacalorias}{Mediacalorias}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Inicializar array de \doxylink{structMediacalorias}{Mediacalorias} a 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{MediaCalorias_8c_a2d2507d44d96c84190e0a68de4620c05}{calcular\+Media\+Caloria}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pl\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} d\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structData}{Data}} data1, \mbox{\hyperlink{structData}{Data}} data2, int tamanho\+Die, int tamanho\+Pl\+Nut, \mbox{\hyperlink{structMediacalorias}{Mediacalorias}} mediac\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Calcular a media de calorias de refei{\ucr}oes de um paciente num determinado periodo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{MediaCalorias_8c_ae3dc443f8e8dd8f55204828c3a2329f8}{Mostra\+Array\+Mediacalorias}} (\mbox{\hyperlink{structMediacalorias}{Mediacalorias}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Função no qual calcula a MNedia de Calorias de um paciente num determinado periodo. 
+
+\begin{DoxyAuthor}{Autor}
+Grupo 03 / Bruno Dantas nº27958 / Diogo Abreu nº27975/ Paulo Gonçalves nº27966 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2023-\/12-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{MediaCalorias_8c_a2d2507d44d96c84190e0a68de4620c05}\label{MediaCalorias_8c_a2d2507d44d96c84190e0a68de4620c05} 
+\index{MediaCalorias.c@{MediaCalorias.c}!calcularMediaCaloria@{calcularMediaCaloria}}
+\index{calcularMediaCaloria@{calcularMediaCaloria}!MediaCalorias.c@{MediaCalorias.c}}
+\doxysubsubsection{\texorpdfstring{calcularMediaCaloria()}{calcularMediaCaloria()}}
+{\footnotesize\ttfamily int calcular\+Media\+Caloria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pl\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{d\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data1,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data2,  }\item[{int}]{tamanho\+Die,  }\item[{int}]{tamanho\+Pl\+Nut,  }\item[{\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}}]{mediac\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Calcular a media de calorias de refei{\ucr}oes de um paciente num determinado periodo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pl} & Array de Planos Nutricionais Fornecido\\
+\hline
+{\em d} & Array de Dietas Fornecido\\
+\hline
+{\em data1} & inicio do intervalo\\
+\hline
+{\em data2} & fim do intervalo\\
+\hline
+{\em tamanho\+Die} & Tamanho do Array Dieta\\
+\hline
+{\em tamanho\+Pl\+Nut} & Tamanho do Array Planos Nutricionais\\
+\hline
+{\em mediac} & Array de medias a preencher\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{MediaCalorias_8c_acf812068f0cd71b9012cb3663c8690c7}\label{MediaCalorias_8c_acf812068f0cd71b9012cb3663c8690c7} 
+\index{MediaCalorias.c@{MediaCalorias.c}!IniciMediaCalorias@{IniciMediaCalorias}}
+\index{IniciMediaCalorias@{IniciMediaCalorias}!MediaCalorias.c@{MediaCalorias.c}}
+\doxysubsubsection{\texorpdfstring{IniciMediaCalorias()}{IniciMediaCalorias()}}
+{\footnotesize\ttfamily int Inici\+Media\+Calorias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Inicializar array de \doxylink{structMediacalorias}{Mediacalorias} a 0. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de \doxylink{structMediacalorias}{Mediacalorias} Fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{MediaCalorias_8c_ae3dc443f8e8dd8f55204828c3a2329f8}\label{MediaCalorias_8c_ae3dc443f8e8dd8f55204828c3a2329f8} 
+\index{MediaCalorias.c@{MediaCalorias.c}!MostraArrayMediacalorias@{MostraArrayMediacalorias}}
+\index{MostraArrayMediacalorias@{MostraArrayMediacalorias}!MediaCalorias.c@{MediaCalorias.c}}
+\doxysubsubsection{\texorpdfstring{MostraArrayMediacalorias()}{MostraArrayMediacalorias()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Mediacalorias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}

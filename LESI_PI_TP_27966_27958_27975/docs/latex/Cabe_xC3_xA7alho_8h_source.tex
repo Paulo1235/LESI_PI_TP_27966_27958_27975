@@ -1,0 +1,79 @@
+\doxysection{C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Cabeçalho.h}
+\hypertarget{Cabe_xC3_xA7alho_8h_source}{}\label{Cabe_xC3_xA7alho_8h_source}\mbox{\hyperlink{Cabe_xC3_xA7alho_8h}{Ir para a documentação deste ficheiro.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Gabinete_8h}{Gabinete.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ warning\ (disable:\ 4996)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#pragma\ warning\ (disable:\ 6031)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}Data.lib"{})}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structData}{Data}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ year;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ month;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ day;}
+\DoxyCodeLine{00029\ \}\mbox{\hyperlink{structData}{Data}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{int}\ numP;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{double}\ media;}
+\DoxyCodeLine{00038\ \}\mbox{\hyperlink{structMediacalorias}{Mediacalorias}};\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ Paciente}}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{int}\ IniciPaciente(\mbox{\hyperlink{structInfDieta}{InfDieta}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a24d346eaa1a0ed46033b8e3b7f0b6986}{ImportarPacientes}}(\textcolor{keywordtype}{char}\ nomeFicheiro[],\ \mbox{\hyperlink{structPaciente}{Paciente}}\ paciente[]);}
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ab72e6e7d3d2f5a8b5e60108200f34305}{MostraArrayPaciente}}(\mbox{\hyperlink{structPaciente}{Paciente}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a83129475aaa749948b881d270eaf532e}{MostrarPaciente}}(\mbox{\hyperlink{structPaciente}{Paciente}}\ x[],\ \textcolor{keywordtype}{int}\ posicao);}
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ac265ddb634ed3939ef450b8eb5761b70}{GuardarFicheirosBin}}(\mbox{\hyperlink{structPaciente}{Paciente}}\ P[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ac60ab16556106d62ed67a2e4c931d689}{LoadFicheirosBin}}(\mbox{\hyperlink{structPaciente}{Paciente}}\ P[]);}
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a9dc7c782cc96c0a3e32440ca86a00ed8}{contarPacientesQueUltrapassaram}}(\textcolor{keywordtype}{int}\ limiteCalorias,\ \mbox{\hyperlink{structInfDieta}{InfDieta}}\ x[],\ \mbox{\hyperlink{structData}{Data}}\ date1,\ \mbox{\hyperlink{structData}{Data}}\ date2,\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_aa103cdbbe0e2ee8585aa7bf105b369ba}{OrdenarPacienteDescrescente}}(\mbox{\hyperlink{structPaciente}{Paciente}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a925abdb8bd14eb8aaa6992636be5b844}{PacientesForaDoIntervalo}}(\mbox{\hyperlink{structPaciente}{Paciente}}\ x[],\ \mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ pl[],\ \mbox{\hyperlink{structInfDieta}{InfDieta}}\ d[],\ \textcolor{keywordtype}{int}\ tamanhoDie,\ \textcolor{keywordtype}{int}\ tamanhoPa,\ \textcolor{keywordtype}{int}\ tamanhoPlNut,\ \mbox{\hyperlink{structData}{Data}}\ data1,\ \mbox{\hyperlink{structData}{Data}}\ data2);}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ Dieta}}
+\DoxyCodeLine{00055\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a6a02685449cedba363242dd1704c407a}{IniciInfDieta}}(\mbox{\hyperlink{structInfDieta}{InfDieta}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a310d9182617f1552aceccc4c83a81f2c}{MostraArrayInfDieta}}(\mbox{\hyperlink{structInfDieta}{InfDieta}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a3ed1605f364ac1847cfc2f0ee72b881b}{ImportarInfDieta}}(\textcolor{keywordtype}{char}\ nomeFicheiro[],\ \mbox{\hyperlink{structInfDieta}{InfDieta}}\ x[]);}
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a404018d909506ac9709cb664eef9bf1a}{GuardarFicheirosDietaBin}}(\mbox{\hyperlink{structInfDieta}{InfDieta}}\ D[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a967377eccf52f0b6e610d00b2d110376}{LoadFicheirosDietaBin}}(\mbox{\hyperlink{structInfDieta}{InfDieta}}\ D[]);}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ Plano\ Nutricional}}
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ab28e3c2e30420d57b08e6a5abfa4dcac}{IniciPlNutricionais}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a038f15d4b8f97b690c22f25f190cb629}{MostraPlNutricional}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ x[],\ \textcolor{keywordtype}{int}\ instancia);}
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a8c1dd9e7afaa014b1ecd8d3f250c710b}{ImportarPlNutricionais}}(\textcolor{keywordtype}{char}\ nomeFicheiro[],\ \mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ x[]);}
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a95f586c162505fe0ef5afc91efa28854}{MostraArrayPlNutricionais}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ae7faafd4caa3c0bc0c950643b97ba81e}{GuardarFicheirosPlNutricionaisBin}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ D[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_abe940607c1834b886973a4172c8d73f0}{LoadFicheirosPlNutricionaisBin}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ D[]);}
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a7ebdf252b0cd3f942c59f40d977c9fcb}{buscarPlanoNutricional}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ pl[],\ \mbox{\hyperlink{structPaciente}{Paciente}}\ x[],\ \mbox{\hyperlink{structInfDieta}{InfDieta}}\ d[],\ \textcolor{keywordtype}{int}\ tamanhoDie,\ \textcolor{keywordtype}{int}\ tamanhoPa,\ \textcolor{keywordtype}{int}\ tamanhoPlNut,\ \textcolor{keywordtype}{char}\ refeicao[],\ \mbox{\hyperlink{structData}{Data}}\ data1,\ \mbox{\hyperlink{structData}{Data}}\ data2);}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ com\ Data}}
+\DoxyCodeLine{00073\ \mbox{\hyperlink{structData}{Data}}\ TransformaDataString(\textcolor{keywordtype}{char}\ datastring[]);}
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{int}\ IniciData(\mbox{\hyperlink{structData}{Data}}\ data);}
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ com\ Tabela}}
+\DoxyCodeLine{00078\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_abc611c581e25bb65858ad19061dacbb1}{GerarTabela}}(\textcolor{keywordtype}{int}\ Npac,\ \mbox{\hyperlink{structTabelaPacientes}{TabelaPacientes}}\ tbpacientes[],\ \mbox{\hyperlink{structPaciente}{Paciente}}\ pa[],\ \mbox{\hyperlink{structInfDieta}{InfDieta}}\ die[],\ \mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ pln[]);}
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a8b37b780f65d021b4b13b9489f8c37f9}{MostrarTabela}}(\textcolor{keywordtype}{int}\ Npac,\ \mbox{\hyperlink{structTabelaPacientes}{TabelaPacientes}}\ tbpacientes[]);}
+\DoxyCodeLine{00080\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a114efd63b9cceca502dcdeaf785558ed}{IniTabela}}(\textcolor{keywordtype}{int}\ Npac,\ \mbox{\hyperlink{structTabelaPacientes}{TabelaPacientes}}\ tbpacientes[]);}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ com\ MediaCalorias}}
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a2d2507d44d96c84190e0a68de4620c05}{calcularMediaCaloria}}(\mbox{\hyperlink{structPlNutricionais}{PlNutricionais}}\ pl[],\ \mbox{\hyperlink{structInfDieta}{InfDieta}}\ d[],\ \mbox{\hyperlink{structData}{Data}}\ data1,\ \mbox{\hyperlink{structData}{Data}}\ data2,\ \textcolor{keywordtype}{int}\ tamanhoDie,\ \textcolor{keywordtype}{int}\ tamanhoPlNut,\ \mbox{\hyperlink{structMediacalorias}{Mediacalorias}}\ mediac[]);}
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_acf812068f0cd71b9012cb3663c8690c7}{IniciMediaCalorias}}(\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ae3dc443f8e8dd8f55204828c3a2329f8}{MostraArrayMediacalorias}}(\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}\ x[],\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#pragma\ region\ Funcoes\ com\ arrays}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ }
+
+\end{DoxyCode}

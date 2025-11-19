@@ -1,0 +1,2 @@
+C:\Ipca\Programacao_imperativa\trab\d-03\Data.h\x64\Debug\Data.lib
+C:\Ipca\Programacao_imperativa\trab\d-03\Data\x64\Debug\Data.lib

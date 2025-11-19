@@ -1,0 +1,625 @@
+\doxysection{Referência ao ficheiro C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Cabeçalho.h}
+\hypertarget{Cabe_xC3_xA7alho_8h}{}\label{Cabe_xC3_xA7alho_8h}\index{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/Cabeçalho.h@{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/Cabeçalho.h}}
+
+
+Header file no qual estão declaradas as funções (\doxylink{structData}{Data}, \doxylink{structMediacalorias}{Mediacalorias})  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include "{}Gabinete.\+h"{}}\newline
+Diagrama de dependências de inclusão para Cabeçalho.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{Cabe_xC3_xA7alho_8h__incl}
+\end{center}
+\end{figure}
+Este grafo mostra quais são os ficheiros que incluem directamente ou indirectamente este ficheiro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Cabe_xC3_xA7alho_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structData}{Data}}
+\begin{DoxyCompactList}\small\item\em Struct \doxylink{structData}{Data} (year, month, day) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structMediacalorias}{Mediacalorias}}
+\begin{DoxyCompactList}\small\item\em Struct Media das Calorias (numP, media) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Definições de tipos}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_a3c7d12d60eadd3cf10e7096978320302}\label{Cabe_xC3_xA7alho_8h_a3c7d12d60eadd3cf10e7096978320302} 
+typedef struct \mbox{\hyperlink{structData}{Data}} {\bfseries Data}
+\begin{DoxyCompactList}\small\item\em Struct \doxylink{structData}{Data} (year, month, day) \end{DoxyCompactList}\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_aecef36a43b4a7cc036bd3ff9ef59185a}\label{Cabe_xC3_xA7alho_8h_aecef36a43b4a7cc036bd3ff9ef59185a} 
+typedef struct \mbox{\hyperlink{structMediacalorias}{Mediacalorias}} {\bfseries Mediacalorias}
+\begin{DoxyCompactList}\small\item\em Struct Media das Calorias (numP, media) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_a9ca41254c27ea86e4852d9e5f5e7a03f}\label{Cabe_xC3_xA7alho_8h_a9ca41254c27ea86e4852d9e5f5e7a03f} 
+int {\bfseries Inici\+Paciente} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a24d346eaa1a0ed46033b8e3b7f0b6986}{Importar\+Pacientes}} (char nome\+Ficheiro\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPaciente}{Paciente}} paciente\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Importa Pacientes atravez de um ficheiro txt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ab72e6e7d3d2f5a8b5e60108200f34305}{Mostra\+Array\+Paciente}} (\mbox{\hyperlink{structPaciente}{Paciente}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a83129475aaa749948b881d270eaf532e}{Mostrar\+Paciente}} (\mbox{\hyperlink{structPaciente}{Paciente}} x\mbox{[}$\,$\mbox{]}, int posicao)
+\begin{DoxyCompactList}\small\item\em Mostra o \doxylink{structPaciente}{Paciente} no Ecra. \end{DoxyCompactList}\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_ac265ddb634ed3939ef450b8eb5761b70}\label{Cabe_xC3_xA7alho_8h_ac265ddb634ed3939ef450b8eb5761b70} 
+int {\bfseries Guardar\+Ficheiros\+Bin} (\mbox{\hyperlink{structPaciente}{Paciente}} P\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Guarda array de pacientes num ficheiro bin{\ucr}rio /summary\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array fornecido\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ac60ab16556106d62ed67a2e4c931d689}{Load\+Ficheiros\+Bin}} (\mbox{\hyperlink{structPaciente}{Paciente}} P\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Carrega Dados de um ficheiro bin{\ucr}rio. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a9dc7c782cc96c0a3e32440ca86a00ed8}{contar\+Pacientes\+Que\+Ultrapassaram}} (int limite\+Calorias, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structData}{Data}} date1, \mbox{\hyperlink{structData}{Data}} date2, int tamanho)
+\begin{DoxyCompactList}\small\item\em Carrega Dados de um ficheiro bin{\ucr}rio. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_aa103cdbbe0e2ee8585aa7bf105b369ba}{Ordenar\+Paciente\+Descrescente}} (\mbox{\hyperlink{structPaciente}{Paciente}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Ordena os Pacientes por ordem decrescente de acordo com o numero de \doxylink{structPaciente}{Paciente}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a925abdb8bd14eb8aaa6992636be5b844}{Pacientes\+Fora\+Do\+Intervalo}} (\mbox{\hyperlink{structPaciente}{Paciente}} x\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pl\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} d\mbox{[}$\,$\mbox{]}, int tamanho\+Die, int tamanho\+Pa, int tamanho\+Pl\+Nut, \mbox{\hyperlink{structData}{Data}} data1, \mbox{\hyperlink{structData}{Data}} data2)
+\begin{DoxyCompactList}\small\item\em Mostra os Pacientes que, num determinado Periodo, tenham feito uma refei{\ucr}{\ucr}o fora do intervalo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a6a02685449cedba363242dd1704c407a}{Inici\+Inf\+Dieta}} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Inicializa um array do tipo \doxylink{structInfDieta}{Inf\+Dieta} a 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a310d9182617f1552aceccc4c83a81f2c}{Mostra\+Array\+Inf\+Dieta}} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a3ed1605f364ac1847cfc2f0ee72b881b}{Importar\+Inf\+Dieta}} (char nome\+Ficheiro\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Importa Pacientes atravez de um ficheiro txt. \end{DoxyCompactList}\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_a404018d909506ac9709cb664eef9bf1a}\label{Cabe_xC3_xA7alho_8h_a404018d909506ac9709cb664eef9bf1a} 
+int {\bfseries Guardar\+Ficheiros\+Dieta\+Bin} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} D\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Guarda array de Dietas num ficheiro bin{\ucr}rio /summary\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array fornecido\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a967377eccf52f0b6e610d00b2d110376}{Load\+Ficheiros\+Dieta\+Bin}} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} D\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Carrega Dados de um ficheiro bin{\ucr}rio. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ab28e3c2e30420d57b08e6a5abfa4dcac}{Inici\+Pl\+Nutricionais}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Inicializa um array do tipo \doxylink{structPlNutricionais}{Pl\+Nutricionais} a 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a038f15d4b8f97b690c22f25f190cb629}{Mostra\+Pl\+Nutricional}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]}, int instancia)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a8c1dd9e7afaa014b1ecd8d3f250c710b}{Importar\+Pl\+Nutricionais}} (char nome\+Ficheiro\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Importa Pacientes atravez de um ficheiro txt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a95f586c162505fe0ef5afc91efa28854}{Mostra\+Array\+Pl\+Nutricionais}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_ae7faafd4caa3c0bc0c950643b97ba81e}\label{Cabe_xC3_xA7alho_8h_ae7faafd4caa3c0bc0c950643b97ba81e} 
+int {\bfseries Guardar\+Ficheiros\+Pl\+Nutricionais\+Bin} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} D\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Guarda array de Pl\+Nutricionaiss num ficheiro bin{\ucr}rio /summary\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array fornecido\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_abe940607c1834b886973a4172c8d73f0}{Load\+Ficheiros\+Pl\+Nutricionais\+Bin}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} D\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Carrega Dados de um ficheiro bin{\ucr}rio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a7ebdf252b0cd3f942c59f40d977c9fcb}{buscar\+Plano\+Nutricional}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pl\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPaciente}{Paciente}} x\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} d\mbox{[}$\,$\mbox{]}, int tamanho\+Die, int tamanho\+Pa, int tamanho\+Pl\+Nut, char refeicao\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structData}{Data}} data1, \mbox{\hyperlink{structData}{Data}} data2)
+\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_a5dd1f9fec890cb39b13d47a6a97946cb}\label{Cabe_xC3_xA7alho_8h_a5dd1f9fec890cb39b13d47a6a97946cb} 
+\mbox{\hyperlink{structData}{Data}} {\bfseries Transforma\+Data\+String} (char datastring\mbox{[}$\,$\mbox{]})
+\item 
+\Hypertarget{Cabe_xC3_xA7alho_8h_ae2dbde46b256c4e3455af6895b8a1fe8}\label{Cabe_xC3_xA7alho_8h_ae2dbde46b256c4e3455af6895b8a1fe8} 
+int {\bfseries Inici\+Data} (\mbox{\hyperlink{structData}{Data}} data)
+\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_abc611c581e25bb65858ad19061dacbb1}{Gerar\+Tabela}} (int Npac, \mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}} tbpacientes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPaciente}{Paciente}} pa\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} die\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pln\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gerar os dados para a tabela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a8b37b780f65d021b4b13b9489f8c37f9}{Mostrar\+Tabela}} (int Npac, \mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}} tbpacientes\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Mostra os dados na linha de comados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a114efd63b9cceca502dcdeaf785558ed}{Ini\+Tabela}} (int Npac, \mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}} tbpacientes\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Inicialisa a tabela. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_a2d2507d44d96c84190e0a68de4620c05}{calcular\+Media\+Caloria}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pl\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} d\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structData}{Data}} data1, \mbox{\hyperlink{structData}{Data}} data2, int tamanho\+Die, int tamanho\+Pl\+Nut, \mbox{\hyperlink{structMediacalorias}{Mediacalorias}} mediac\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Calcular a media de calorias de refei{\ucr}oes de um paciente num determinado periodo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_acf812068f0cd71b9012cb3663c8690c7}{Inici\+Media\+Calorias}} (\mbox{\hyperlink{structMediacalorias}{Mediacalorias}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Inicializar array de \doxylink{structMediacalorias}{Mediacalorias} a 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Cabe_xC3_xA7alho_8h_ae3dc443f8e8dd8f55204828c3a2329f8}{Mostra\+Array\+Mediacalorias}} (\mbox{\hyperlink{structMediacalorias}{Mediacalorias}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Header file no qual estão declaradas as funções (\doxylink{structData}{Data}, \doxylink{structMediacalorias}{Mediacalorias}) 
+
+\begin{DoxyAuthor}{Autor}
+Grupo 03 / Bruno Dantas nº27958 / Diogo Abreu nº27975/ Paulo Gonçalves nº27966 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2023-\/12-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a7ebdf252b0cd3f942c59f40d977c9fcb}\label{Cabe_xC3_xA7alho_8h_a7ebdf252b0cd3f942c59f40d977c9fcb} 
+\index{Cabeçalho.h@{Cabeçalho.h}!buscarPlanoNutricional@{buscarPlanoNutricional}}
+\index{buscarPlanoNutricional@{buscarPlanoNutricional}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{buscarPlanoNutricional()}{buscarPlanoNutricional()}}
+{\footnotesize\ttfamily void buscar\+Plano\+Nutricional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pl\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{d\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho\+Die,  }\item[{int}]{tamanho\+Pa,  }\item[{int}]{tamanho\+Pl\+Nut,  }\item[{char}]{refeicao\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data1,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pl} & Array de Planos Nutricionais\\
+\hline
+{\em x} & Array \doxylink{structPaciente}{Paciente}\\
+\hline
+{\em d} & Array de Dietas\\
+\hline
+{\em tamanho\+Die} & Tamanha do array dieta\\
+\hline
+{\em tamanho\+Pa} & Tamanha do array \doxylink{structPaciente}{Paciente}\\
+\hline
+{\em tamanho\+Pl\+Nut} & Tamanha do array Dieta\\
+\hline
+{\em refeicao} & Refei{\ucr}{\ucr}o para comparar\\
+\hline
+{\em data1} & data de inicio do periodo\\
+\hline
+{\em data2} & data de fim do periodo\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a2d2507d44d96c84190e0a68de4620c05}\label{Cabe_xC3_xA7alho_8h_a2d2507d44d96c84190e0a68de4620c05} 
+\index{Cabeçalho.h@{Cabeçalho.h}!calcularMediaCaloria@{calcularMediaCaloria}}
+\index{calcularMediaCaloria@{calcularMediaCaloria}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{calcularMediaCaloria()}{calcularMediaCaloria()}}
+{\footnotesize\ttfamily int calcular\+Media\+Caloria (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pl\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{d\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data1,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data2,  }\item[{int}]{tamanho\+Die,  }\item[{int}]{tamanho\+Pl\+Nut,  }\item[{\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}}]{mediac\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Calcular a media de calorias de refei{\ucr}oes de um paciente num determinado periodo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pl} & Array de Planos Nutricionais Fornecido\\
+\hline
+{\em d} & Array de Dietas Fornecido\\
+\hline
+{\em data1} & inicio do intervalo\\
+\hline
+{\em data2} & fim do intervalo\\
+\hline
+{\em tamanho\+Die} & Tamanho do Array Dieta\\
+\hline
+{\em tamanho\+Pl\+Nut} & Tamanho do Array Planos Nutricionais\\
+\hline
+{\em mediac} & Array de medias a preencher\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a9dc7c782cc96c0a3e32440ca86a00ed8}\label{Cabe_xC3_xA7alho_8h_a9dc7c782cc96c0a3e32440ca86a00ed8} 
+\index{Cabeçalho.h@{Cabeçalho.h}!contarPacientesQueUltrapassaram@{contarPacientesQueUltrapassaram}}
+\index{contarPacientesQueUltrapassaram@{contarPacientesQueUltrapassaram}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{contarPacientesQueUltrapassaram()}{contarPacientesQueUltrapassaram()}}
+{\footnotesize\ttfamily int contar\+Pacientes\+Que\+Ultrapassaram (\begin{DoxyParamCaption}\item[{int}]{limite\+Calorias,  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data1,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data2,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Carrega Dados de um ficheiro bin{\ucr}rio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array onde ir{\ucr} escrever os dados do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_abc611c581e25bb65858ad19061dacbb1}\label{Cabe_xC3_xA7alho_8h_abc611c581e25bb65858ad19061dacbb1} 
+\index{Cabeçalho.h@{Cabeçalho.h}!GerarTabela@{GerarTabela}}
+\index{GerarTabela@{GerarTabela}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{GerarTabela()}{GerarTabela()}}
+{\footnotesize\ttfamily int Gerar\+Tabela (\begin{DoxyParamCaption}\item[{int}]{Npac,  }\item[{\mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}}}]{tbpacientes\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{pa\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{die\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pln\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Gerar os dados para a tabela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Npac} & Numero de Pacientes\\
+\hline
+{\em tbpacientes} & Tabela de Pacientes\\
+\hline
+{\em pa} & Array dos Pacientes \\
+\hline
+{\em die} & Array da Dieta\\
+\hline
+{\em pln} & Array do Planoi Nutricional\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a3ed1605f364ac1847cfc2f0ee72b881b}\label{Cabe_xC3_xA7alho_8h_a3ed1605f364ac1847cfc2f0ee72b881b} 
+\index{Cabeçalho.h@{Cabeçalho.h}!ImportarInfDieta@{ImportarInfDieta}}
+\index{ImportarInfDieta@{ImportarInfDieta}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{ImportarInfDieta()}{ImportarInfDieta()}}
+{\footnotesize\ttfamily int Importar\+Inf\+Dieta (\begin{DoxyParamCaption}\item[{char}]{nome\+Ficheiro\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Importa Pacientes atravez de um ficheiro txt. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro de onde vai ser importado os ficheiros\\
+\hline
+{\em x} & Array de Dietas para onde vai ser importado os ficheiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a24d346eaa1a0ed46033b8e3b7f0b6986}\label{Cabe_xC3_xA7alho_8h_a24d346eaa1a0ed46033b8e3b7f0b6986} 
+\index{Cabeçalho.h@{Cabeçalho.h}!ImportarPacientes@{ImportarPacientes}}
+\index{ImportarPacientes@{ImportarPacientes}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{ImportarPacientes()}{ImportarPacientes()}}
+{\footnotesize\ttfamily int Importar\+Pacientes (\begin{DoxyParamCaption}\item[{char}]{nome\+Ficheiro\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{paciente\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Importa Pacientes atravez de um ficheiro txt. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro de onde vai ser importado os ficheiros\\
+\hline
+{\em paciente} & Array de Pacientes para onde vai ser importado os ficheiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a8c1dd9e7afaa014b1ecd8d3f250c710b}\label{Cabe_xC3_xA7alho_8h_a8c1dd9e7afaa014b1ecd8d3f250c710b} 
+\index{Cabeçalho.h@{Cabeçalho.h}!ImportarPlNutricionais@{ImportarPlNutricionais}}
+\index{ImportarPlNutricionais@{ImportarPlNutricionais}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{ImportarPlNutricionais()}{ImportarPlNutricionais()}}
+{\footnotesize\ttfamily int Importar\+Pl\+Nutricionais (\begin{DoxyParamCaption}\item[{char}]{nome\+Ficheiro\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Importa Pacientes atravez de um ficheiro txt. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro de onde vai ser importado os ficheiros\\
+\hline
+{\em x} & Array de Pl\+Nutricionaiss para onde vai ser importado os ficheiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+i
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a6a02685449cedba363242dd1704c407a}\label{Cabe_xC3_xA7alho_8h_a6a02685449cedba363242dd1704c407a} 
+\index{Cabeçalho.h@{Cabeçalho.h}!IniciInfDieta@{IniciInfDieta}}
+\index{IniciInfDieta@{IniciInfDieta}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{IniciInfDieta()}{IniciInfDieta()}}
+{\footnotesize\ttfamily int Inici\+Inf\+Dieta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Inicializa um array do tipo \doxylink{structInfDieta}{Inf\+Dieta} a 0. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de \doxylink{structInfDieta}{Inf\+Dieta} que vai ser inicializado\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_acf812068f0cd71b9012cb3663c8690c7}\label{Cabe_xC3_xA7alho_8h_acf812068f0cd71b9012cb3663c8690c7} 
+\index{Cabeçalho.h@{Cabeçalho.h}!IniciMediaCalorias@{IniciMediaCalorias}}
+\index{IniciMediaCalorias@{IniciMediaCalorias}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{IniciMediaCalorias()}{IniciMediaCalorias()}}
+{\footnotesize\ttfamily int Inici\+Media\+Calorias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Inicializar array de \doxylink{structMediacalorias}{Mediacalorias} a 0. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de \doxylink{structMediacalorias}{Mediacalorias} Fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_ab28e3c2e30420d57b08e6a5abfa4dcac}\label{Cabe_xC3_xA7alho_8h_ab28e3c2e30420d57b08e6a5abfa4dcac} 
+\index{Cabeçalho.h@{Cabeçalho.h}!IniciPlNutricionais@{IniciPlNutricionais}}
+\index{IniciPlNutricionais@{IniciPlNutricionais}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{IniciPlNutricionais()}{IniciPlNutricionais()}}
+{\footnotesize\ttfamily int Inici\+Pl\+Nutricionais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Inicializa um array do tipo \doxylink{structPlNutricionais}{Pl\+Nutricionais} a 0. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de \doxylink{structPlNutricionais}{Pl\+Nutricionais} que vai ser inicializado\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a114efd63b9cceca502dcdeaf785558ed}\label{Cabe_xC3_xA7alho_8h_a114efd63b9cceca502dcdeaf785558ed} 
+\index{Cabeçalho.h@{Cabeçalho.h}!IniTabela@{IniTabela}}
+\index{IniTabela@{IniTabela}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{IniTabela()}{IniTabela()}}
+{\footnotesize\ttfamily int Ini\+Tabela (\begin{DoxyParamCaption}\item[{int}]{Npac,  }\item[{\mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}}}]{tbpacientes\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Inicialisa a tabela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Npac} & Numero de Pacientes\\
+\hline
+{\em tbpacientes} & Tabela de Pacientes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_ac60ab16556106d62ed67a2e4c931d689}\label{Cabe_xC3_xA7alho_8h_ac60ab16556106d62ed67a2e4c931d689} 
+\index{Cabeçalho.h@{Cabeçalho.h}!LoadFicheirosBin@{LoadFicheirosBin}}
+\index{LoadFicheirosBin@{LoadFicheirosBin}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{LoadFicheirosBin()}{LoadFicheirosBin()}}
+{\footnotesize\ttfamily int Load\+Ficheiros\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{P\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Carrega Dados de um ficheiro bin{\ucr}rio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array onde ir{\ucr} escrever os dados do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a967377eccf52f0b6e610d00b2d110376}\label{Cabe_xC3_xA7alho_8h_a967377eccf52f0b6e610d00b2d110376} 
+\index{Cabeçalho.h@{Cabeçalho.h}!LoadFicheirosDietaBin@{LoadFicheirosDietaBin}}
+\index{LoadFicheirosDietaBin@{LoadFicheirosDietaBin}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{LoadFicheirosDietaBin()}{LoadFicheirosDietaBin()}}
+{\footnotesize\ttfamily int Load\+Ficheiros\+Dieta\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{D\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Carrega Dados de um ficheiro bin{\ucr}rio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array onde ir{\ucr} escrever os dados do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_abe940607c1834b886973a4172c8d73f0}\label{Cabe_xC3_xA7alho_8h_abe940607c1834b886973a4172c8d73f0} 
+\index{Cabeçalho.h@{Cabeçalho.h}!LoadFicheirosPlNutricionaisBin@{LoadFicheirosPlNutricionaisBin}}
+\index{LoadFicheirosPlNutricionaisBin@{LoadFicheirosPlNutricionaisBin}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{LoadFicheirosPlNutricionaisBin()}{LoadFicheirosPlNutricionaisBin()}}
+{\footnotesize\ttfamily int Load\+Ficheiros\+Pl\+Nutricionais\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{D\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Carrega Dados de um ficheiro bin{\ucr}rio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array onde ir{\ucr} escrever os dados do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a310d9182617f1552aceccc4c83a81f2c}\label{Cabe_xC3_xA7alho_8h_a310d9182617f1552aceccc4c83a81f2c} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostraArrayInfDieta@{MostraArrayInfDieta}}
+\index{MostraArrayInfDieta@{MostraArrayInfDieta}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostraArrayInfDieta()}{MostraArrayInfDieta()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Inf\+Dieta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_ae3dc443f8e8dd8f55204828c3a2329f8}\label{Cabe_xC3_xA7alho_8h_ae3dc443f8e8dd8f55204828c3a2329f8} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostraArrayMediacalorias@{MostraArrayMediacalorias}}
+\index{MostraArrayMediacalorias@{MostraArrayMediacalorias}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostraArrayMediacalorias()}{MostraArrayMediacalorias()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Mediacalorias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMediacalorias}{Mediacalorias}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_ab72e6e7d3d2f5a8b5e60108200f34305}\label{Cabe_xC3_xA7alho_8h_ab72e6e7d3d2f5a8b5e60108200f34305} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostraArrayPaciente@{MostraArrayPaciente}}
+\index{MostraArrayPaciente@{MostraArrayPaciente}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostraArrayPaciente()}{MostraArrayPaciente()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Paciente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a95f586c162505fe0ef5afc91efa28854}\label{Cabe_xC3_xA7alho_8h_a95f586c162505fe0ef5afc91efa28854} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostraArrayPlNutricionais@{MostraArrayPlNutricionais}}
+\index{MostraArrayPlNutricionais@{MostraArrayPlNutricionais}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostraArrayPlNutricionais()}{MostraArrayPlNutricionais()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Pl\+Nutricionais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a038f15d4b8f97b690c22f25f190cb629}\label{Cabe_xC3_xA7alho_8h_a038f15d4b8f97b690c22f25f190cb629} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostraPlNutricional@{MostraPlNutricional}}
+\index{MostraPlNutricional@{MostraPlNutricional}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostraPlNutricional()}{MostraPlNutricional()}}
+{\footnotesize\ttfamily void Mostra\+Pl\+Nutricional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{instancia }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a83129475aaa749948b881d270eaf532e}\label{Cabe_xC3_xA7alho_8h_a83129475aaa749948b881d270eaf532e} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostrarPaciente@{MostrarPaciente}}
+\index{MostrarPaciente@{MostrarPaciente}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostrarPaciente()}{MostrarPaciente()}}
+{\footnotesize\ttfamily void Mostrar\+Paciente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Mostra o \doxylink{structPaciente}{Paciente} no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Posicao do \doxylink{structPaciente}{Paciente}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a8b37b780f65d021b4b13b9489f8c37f9}\label{Cabe_xC3_xA7alho_8h_a8b37b780f65d021b4b13b9489f8c37f9} 
+\index{Cabeçalho.h@{Cabeçalho.h}!MostrarTabela@{MostrarTabela}}
+\index{MostrarTabela@{MostrarTabela}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{MostrarTabela()}{MostrarTabela()}}
+{\footnotesize\ttfamily void Mostrar\+Tabela (\begin{DoxyParamCaption}\item[{int}]{Npac,  }\item[{\mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}}}]{tbpacientes\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Mostra os dados na linha de comados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Npac} & Numero de Pacientes\\
+\hline
+{\em tbpacientes} & Tabela de Pacientes\\
+\hline
+\end{DoxyParams}
+\Hypertarget{Cabe_xC3_xA7alho_8h_aa103cdbbe0e2ee8585aa7bf105b369ba}\label{Cabe_xC3_xA7alho_8h_aa103cdbbe0e2ee8585aa7bf105b369ba} 
+\index{Cabeçalho.h@{Cabeçalho.h}!OrdenarPacienteDescrescente@{OrdenarPacienteDescrescente}}
+\index{OrdenarPacienteDescrescente@{OrdenarPacienteDescrescente}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{OrdenarPacienteDescrescente()}{OrdenarPacienteDescrescente()}}
+{\footnotesize\ttfamily int Ordenar\+Paciente\+Descrescente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Ordena os Pacientes por ordem decrescente de acordo com o numero de \doxylink{structPaciente}{Paciente}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de Pacientes Fornecido\\
+\hline
+{\em tamanho} & Tamanho do Array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Cabe_xC3_xA7alho_8h_a925abdb8bd14eb8aaa6992636be5b844}\label{Cabe_xC3_xA7alho_8h_a925abdb8bd14eb8aaa6992636be5b844} 
+\index{Cabeçalho.h@{Cabeçalho.h}!PacientesForaDoIntervalo@{PacientesForaDoIntervalo}}
+\index{PacientesForaDoIntervalo@{PacientesForaDoIntervalo}!Cabeçalho.h@{Cabeçalho.h}}
+\doxysubsubsection{\texorpdfstring{PacientesForaDoIntervalo()}{PacientesForaDoIntervalo()}}
+{\footnotesize\ttfamily int Pacientes\+Fora\+Do\+Intervalo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pl\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{d\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho\+Die,  }\item[{int}]{tamanho\+Pa,  }\item[{int}]{tamanho\+Pl\+Nut,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data1,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data2 }\end{DoxyParamCaption})}
+
+
+
+Mostra os Pacientes que, num determinado Periodo, tenham feito uma refei{\ucr}{\ucr}o fora do intervalo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de Pacientes Fornecido\\
+\hline
+{\em pl} & Array de Dietas Fornecido\\
+\hline
+{\em d} & Array de Planos Nutricionais Fornecido\\
+\hline
+{\em tamanho\+Die} & Tamanho do Array Dieta\\
+\hline
+{\em tamanho\+Pa} & Tamanho do Array Pacientes\\
+\hline
+{\em tamanho\+Pl\+Nut} & Tamanho do Array Planos Nutricionais\\
+\hline
+{\em data1} & inicio do intervalo\\
+\hline
+{\em data2} & fim do intervalo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}

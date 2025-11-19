@@ -1,0 +1,10 @@
+<map id="/home/dantas/Documentos/d&#45;03&#45;main/d&#45;03&#45;main/LESI_PI_TP_27966_27958_27975/Gabinete.h" name="/home/dantas/Documentos/d&#45;03&#45;main/d&#45;03&#45;main/LESI_PI_TP_27966_27958_27975/Gabinete.h">
+<area shape="rect" id="node1" title="Header file no qual estão declaradas as estruturas dos dados (InfDieta, Paciente, PlNutricionais,..." alt="" coords="627,5,832,76"/>
+<area shape="rect" id="node2" href="$Cabe_xC3_xA7alho_8h.html" title="Header file no qual estão declaradas as funções (Data, Mediacalorias)" alt="" coords="627,124,832,195"/>
+<area shape="rect" id="node3" href="$Dieta_8c.html" title="Funções para gerir dados das dietas." alt="" coords="5,243,211,313"/>
+<area shape="rect" id="node4" href="$Main_8c.html" title="Ficheiro que executa as Funções." alt="" coords="235,250,487,306"/>
+<area shape="rect" id="node5" href="$MediaCalorias_8c.html" title="Função no qual calcula a MNedia de Calorias de um paciente num determinado periodo." alt="" coords="512,243,717,313"/>
+<area shape="rect" id="node6" href="$Paciente_8c.html" title="Funções para gerir dados dos pacientes." alt="" coords="741,243,947,313"/>
+<area shape="rect" id="node7" href="$PlNutricionais_8c.html" title="Funções para gerir dados dos planos nutricionais." alt="" coords="971,243,1176,313"/>
+<area shape="rect" id="node8" href="$Tabela_8c.html" title="Mostra uma Tabela com todos os dados pretendidos." alt="" coords="1200,243,1405,313"/>
+</map>

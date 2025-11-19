@@ -1,237 +1,195 @@
-/*
---Trabalho de Grupo--
-Bruno Dantas - a27958@alunos.ipca.pt
-Diogo Abreu - a27975@alunos.ipca.pt
-Paulo Gonçalves - a27966@alunos.ipca.pt
-DATA : HOJE
-Funcoes do Paciente
-*/
-
+/**
+ * @file Paciente.c
+ * @author Grupo 03 / Bruno Dantas nÂº27958 / Diogo Abreu nÂº27975/ Paulo GonÃ§alves nÂº27966
+ * @brief FunÃ§Ãµes para gerir dados dos pacientes
+ * @version 0.1
+ * @date 2023-12-30
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+#include <locale.h>
 #include "Gabinete.h"
-#include "Gerirficheiros.h"
+#include "Cabecalho.h"
+
+#pragma region InicializarArraypaciente
+/// <summary>
+/// Inicializa um array do tipo Paciente a 0
+/// </summary>
+/// <param name="x">Array de Paciente que vai ser inicializado</param>
+/// <param name="tamanho">tamanho do array</param>
+/// <returns></returns>
+int IniciPaciente(Paciente x[], int tamanho) {
+    for (int i = 0; i < tamanho; i++) {
+        x[i].numP = 0;
+        strcpy(x[i].nome, "");
+        x[i].tel = 0;
+    }return 1;
+}
+#pragma endregion
+
 #pragma region ImportarPacientes
+/// <summary>
+/// Importa Pacientes atravez de um ficheiro txt
+/// </summary>
+/// <param name="nomeFicheiro">Nome do ficheiro de onde vai ser importado os ficheiros</param>
+/// <param name="paciente">Array de Pacientes para onde vai ser importado os ficheiros</param>
+/// <returns></returns>
 int ImportarPacientes(char nomeFicheiro[], Paciente paciente[]) {
 	FILE* fp = fopen(nomeFicheiro, "r");
 	int i = 0;
 	while (1)
 	{
-		fscanf(fp, "%d;%[^;];%s", &paciente[i].numP, paciente[i].nome, paciente[i].tel); // erro ;988768565
+		fscanf(fp, "%d;%[^;];%d", &paciente[i].numP, paciente[i].nome, &paciente[i].tel);
 		i++;
 		if (feof(fp))break;
-			
 	}	fclose(fp); return i;
 }
 #pragma endregion
 
-#pragma region MostrarArray
+#pragma region MostrarArraPaciente
 /// <summary>
 /// Mostra o Array no Ecra
 /// </summary>
 /// <param name="x">Array fornecido</param>
 /// <param name="tamanho">Tamanho do array</param>
 void MostraArrayPaciente(Paciente x[], int tamanho) {
-
     for (int i = 0; i < tamanho; i++) {
         printf("\n//////////////////////////////////////////////\n");
         printf("array[%d].numP = %d\n", i, x[i].numP);
         printf("array[%d].nome = %s\n", i, x[i].nome);
-        printf("array[%d].tel = %s\n", i, x[i].tel);
+        printf("array[%d].tel = %d\n", i, x[i].tel);
     }
-};
+}
 #pragma endregion
 
+#pragma region MostrarPaciente
+/// <summary>
+/// Mostra o Paciente no Ecra
+/// </summary>
+/// <param name="x">Array fornecido</param>
+/// <param name="tamanho">Posicao do Paciente</param>
+void MostrarPaciente(Paciente x[],int posicao) {
+        printf("\n//////////////////////////////////////////////\n");
+        printf("array[%d].numP = %d\n", posicao, x[posicao].numP);
+        printf("array[%d].nome = %s\n", posicao, x[posicao].nome);
+        printf("array[%d].tel = %d\n", posicao, x[posicao].tel);
+}
+#pragma endregion
 
 #pragma region GuardarFicheirosBin 
-int GuardarFicheirosBin(char NomeFicheiro, Paciente P[]) {
-
+/// <summary>
+/// Guarda array de pacientes num ficheiro binï¿½rio 
+///</summary>
+/// <param name="P">array fornecido</param>
+/// <param name="tamanho">tamanho do array</param>
+/// <returns></returns>
+int GuardarFicheirosBin(Paciente P[], int tamanho) {
     FILE* fp = fopen("Paciente.dat", "wb"); //em qual ficheiro escreve? no Paciente.dat criado nos ficheiros BIN??
     if (fp != NULL) {
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < tamanho; i++) {
             fwrite(&P[i], 1, sizeof(Paciente), fp);
         }
-    }
-    fclose(fp);
-} //O ficheiros binario é so um ou 3?
+        fclose(fp);
+        return 1;
+    } return 0;
+}
 #pragma endregion
 
-
 #pragma region LoadFicheirosBin
-int LoadFicheirosBin(char NomeFicheiro, Paciente P[]) {
-    FILE* fp = fopen("Turma.dat", "rb");
+/// <summary>
+/// Carrega Dados de um ficheiro binï¿½rio
+/// </summary>
+/// <param name="P">array onde irï¿½ escrever os dados do ficheiro</param>
+/// <returns></returns>
+int LoadFicheirosBin(Paciente P[]) {
+    FILE* fp = fopen("Paciente.dat", "rb");
     if (fp != NULL) {
         int i = 0;
-
         while (fread(&P[i], 1, sizeof(Paciente), fp)) {
             i++;
         }
+        return 1;
     }
 }
 #pragma endregion
 
-
-
-
-
-/*
-//2. Função para contar o número de pacientes que ultrapassaram uma quantidade de calorias
-int contarPacientesQueUltrapassaram(char nomeArquivo, int limiteCalorias) {
-	FILE* arquivo = fopen(nomeArquivo, "r"); // Abre o arquivo em modo de leitura
-	int calorias, pacientesQueUltrapassaram = 0;
-
-
-	// Lê os dados do arquivo e conta os pacientes que ultrapassaram o limite de calorias
-	while (fscanf(arquivo, "%d", &calorias) == 1) {
-		if (calorias > limiteCalorias) {
-			pacientesQueUltrapassaram++;
-		}
-	}
-
-	// Fecha o arquivo
-	fclose(arquivo);
-
-	return pacientesQueUltrapassaram;
+#pragma region LoadFicheirosBin
+/// <summary>
+/// Carrega Dados de um ficheiro binï¿½rio
+/// </summary>
+/// <param name="P">array onde irï¿½ escrever os dados do ficheiro</param>
+/// <returns></returns>
+int contarPacientesQueUltrapassaram(int limiteCalorias, InfDieta x[], Data data1, Data data2,int tamanho) {
+    int pacientesQueUltrapassaram = 0;
+    Data data; 
+    data.day = 0;
+    data.month = 0;
+    data.year = 0;
+    for (int i = 0; i < tamanho; i++) {
+        data = TransformaDataString(x[i].data);
+        if ((data.year > data1.year || (data.year == data1.year && (data.month > data1.month || (data.month == data1.month && data.day >= data1.day)))) && (data.year < data2.year || (data.year == data2.year && (data.month < data2.month || (data.month == data2.month && data.day <= data2.day))))) {
+            if(x[i].calorias> limiteCalorias)
+            pacientesQueUltrapassaram++; // A data de teste estï¿½ dentro do intervalo
+        }
+    }
+    return pacientesQueUltrapassaram;
+}
+#pragma endregion
+// Pergunta 3
+// Mostrar os Pacientes em ordem decrescente que, num determinado Periodo, tenham feito uma refeiï¿½ï¿½o fora do intervalo.
+/// <summary>
+/// Ordena os Pacientes por ordem decrescente de acordo com o numero de Paciente
+/// </summary>
+/// <param name="x">Array de Pacientes Fornecido</param>
+/// <param name="tamanho">Tamanho do Array</param>
+/// <returns></returns>
+int OrdenarPacienteDescrescente(Paciente x[], int tamanho) {
+    Paciente aux;
+    for (int i = 0; i < tamanho - 1; i++) {
+        for (int j = i + 1; j < tamanho; j++) {
+            if (x[i].numP < x[j].numP) {
+                aux = x[i];
+                x[i] = x[j];
+                x[j] = aux;
+            }
+        }
+    }
+    return 1;
 }
 
-/////3
-// Função de comparação para qsort
-//int compararPacientes( void a, void b) {
-//    return ((Paciente*)b)->numeroPaciente - ((Paciente*)a)->numeroPaciente;
-//}
-//
-// Função para listar pacientes com calorias fora do intervalo
-void listarPacientesForaDoIntervalo(char nomeArquivo, int limiteInferior, int limiteSuperior) {
-    FILE* arquivo;
-    InfDieta* pacientes;
-    int totalPacientes, i;
+/// <summary>
+/// Mostra os Pacientes que, num determinado Periodo, tenham feito uma refeiï¿½ï¿½o fora do intervalo.
+/// </summary>
+/// <param name="x">Array de Pacientes Fornecido</param>
+/// <param name="pl">Array de Dietas Fornecido</param>
+/// <param name="d">Array de Planos Nutricionais Fornecido</param>
+/// <param name="tamanhoDie">Tamanho do Array Dieta</param>
+/// <param name="tamanhoPa">Tamanho do Array Pacientes</param>
+/// <param name="tamanhoPlNut">Tamanho do Array Planos Nutricionais</param>
+/// <param name="data1">inicio do intervalo</param>
+/// <param name="data2">fim do intervalo</param>
+/// <returns></returns>
+int PacientesForaDoIntervalo(Paciente x[], PlNutricionais pl[], InfDieta d[], int tamanhoDie, int tamanhoPa, int tamanhoPlNut, Data data1, Data data2) {
+    Data data; data.day = 0; data.month = 0; data.year = 0;
+    OrdenarPacienteDescrescente(x, tamanhopaciente);
+    for (int i = 0; i < tamanhoPa; i++) {
+        for (int j = 0; j < tamanhoDie; j++) {
+            if (x[i].numP == d[j].numP) {
+                data = TransformaDataString(d[j].data);
+                if ((data.year > data1.year || (data.year == data1.year && (data.month > data1.month || (data.month == data1.month && data.day >= data1.day)))) && (data.year < data2.year || (data.year == data2.year && (data.month < data2.month || (data.month == data2.month && data.day <= data2.day))))) {
+                    for (int c = 0; c < tamanhoPlNut; c++) {
+                        if (x[i].numP == pl[c].numPaciente) {
+                            if (((d[j].calorias >= pl[c].calMinimas) && (d[j].calorias <= pl[c].calMax)) == 0) {
+                                MostrarPaciente(x,i);
 
-    // Abre o arquivo em modo de leitura
-    arquivo = fopen(nomeArquivo, "r");
-
-    // Lê o total de pacientes do arquivo
-    fscanf(arquivo, "%d", &totalPacientes);
-
-    // Aloca memória para o array de pacientes
-    pacientes = (Paciente*)malloc(totalPacientes * sizeof(Paciente));
-
-    // Lê os dados dos pacientes do arquivo
-    for (i = 0; i < totalPacientes; i++) {
-        fscanf(arquivo, "%d %d", &pacientes[i].numP, &pacientes[i].calorias);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
-    // Fecha o arquivo
-    fclose(arquivo);
-
-    // Ordena os pacientes por ordem decrescente do número de paciente
-    //qsort(pacientes, totalPacientes, sizeof(Paciente), compararPacientes);
-
-    // Imprime a lista de pacientes com calorias fora do intervalo
-    //printf("Lista de pacientes com calorias fora do intervalo (%d - %d):\n", limiteInferior, limiteSuperior);
-    //for (i = 0; i < totalPacientes; i++) {
-    //    if (pacientes[i].calorias < limiteInferior || pacientes[i].calorias > limiteSuperior) {
-    //        printf("Paciente %d: %d calorias\n", pacientes[i].numP, pacientes[i].calorias);
-    //    }
-    //}
-
-    // Libera a memória alocada
-    free(pacientes);
+    return 1;
 }
 
-//Resposta à alinea 4           Ver a questão se é sugerido a data de inicio e fim
-// Função para buscar o plano nutricional de um paciente para uma refeição em um determinado período
-void buscarPlanoNutricional(char nomeArquivo,  char refeicao, char dataInicio, char dataFim) {
-    FILE* arquivo = fopen(nomeArquivo, "r");
-
-    if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo.\n");
-        return;
-    }
-
-    PlNutricionais plano;
-
-    // Lê o arquivo linha por linha
-    while (fscanf(arquivo, "%19s %49s %[^\n]s", plano.dataRefeicao, plano.refeicao, plano.plano) == 3) {
-        // Verifica se a linha pertence ao paciente e se está no período desejado
-        if (strcmp(plano.refeicao, refeicao) == 0 &&
-            strcmp(plano.dataRefeicao, dataInicio) >= 0 &&
-            strcmp(plano.dataRefeicao, dataFim) <= 0) {
-            // Exibe o plano nutricional encontrado
-            printf("%s - %s: %s\n", plano.dataRefeicao, plano.refeicao, plano.plano);
-        }
-    }
-
-    fclose(arquivo);
-}
-
-
-//Resposta à questão 5
-// Função para calcular a média das calorias consumidas por refeição por cada paciente ao longo de um período
-double calcularMediaCalorias(int calorias[MAX_PACIENTES][MAX_DIAS], int numPacientes, int numDias) {
-    for (int paciente = 0; paciente < numPacientes; paciente++) {
-        int totalCalorias = 0;
-        for (int dia = 0; dia < numDias; dia++) {
-            // Somar as calorias consumidas por refeição para cada paciente e dia
-            // Aqui você deve ter a lógica para obter as calorias consumidas por refeição para cada paciente e dia
-            totalCalorias += calorias[paciente][dia];
-        }
-
-        // Calcular a média das calorias consumidas por refeição para o paciente atual
-        if (numDias > 0) {
-            float media = (float)totalCalorias / numDias;
-            return media;
-        }
-        else {
-            return 0;
-        }
-    }
-}
-
-//Exercicio 6
-
-//Contar Pacientes
-int contarPacientes(char nomeArquivo)
-{
-    FILE* arquivo= fopen(nomeArquivo, "r");// Abre o arquivo para leitura
-    char nomeArquivo[] = nomeArquivo;  // Substitua pelo nome do seu arquivo
-    int contador = 0;
-    char caractere;
-
-    
-
-    // Verifica se o arquivo foi aberto com sucesso
-    if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo.\n");
-        return -1;
-    }
-
-    // Percorre o arquivo contando as linhas
-    while ((caractere = fgetc(arquivo)) != EOF) {
-        if (caractere == '\n') {
-            contador++;
-        }
-    }
-
-    // Verifica se a última linha não termina com quebra de linha
-    rewind(arquivo);  // Volta para o início do arquivo
-    if (contador > 0) {
-        fseek(arquivo, -1, SEEK_END);  // Move para o penúltimo caractere
-        if (fgetc(arquivo) != '\n') {
-            contador++;
-        }
-    }
-
-    // Fecha o arquivo
-    fclose(arquivo);
-
-    return contador;
-}
-
-
-// Função para exibir a tabela
-//void exibirTabela(Paciente* pacientes, int numPacientes) {
-//    for (int i = 0; i < numPacientes; i++) {
-//        printf("| %-15d | %-20s | %-15s | %-12s | %-12s | %-15d | %-15d | %-20d |\n",
-//            pacientes[i].numeroPaciente, pacientes[i].nome, pacientes[i].tipoRefeicao,
-//            pacientes[i].dataInicio, pacientes[i].dataFim, pacientes[i].caloriasMinimo,
-//            pacientes[i].caloriasMaximo, pacientes[i].consumoRealizado);
-//    }
-//}*/

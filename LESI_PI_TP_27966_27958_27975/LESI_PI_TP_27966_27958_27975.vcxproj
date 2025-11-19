@@ -108,6 +108,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\IPCA\LESI_PI_TP_27966_27958_27975\Data\x64\Debug\Data.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -128,13 +129,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dieta.c" />
-    <ClCompile Include="GereFicheiros.c" />
+    <ClCompile Include="MediaCalorias.c" />
     <ClCompile Include="Paciente.c" />
     <ClCompile Include="Main.c" />
+    <ClCompile Include="PlNutricionais.c" />
+    <ClCompile Include="Tabela.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cabecalho.h" />
     <ClInclude Include="Gabinete.h" />
-    <ClInclude Include="Gerirficheiros.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

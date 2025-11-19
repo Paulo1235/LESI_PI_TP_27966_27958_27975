@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['importarinfdieta_0',['importarinfdieta',['../Cabe_xC3_xA7alho_8h.html#a3ed1605f364ac1847cfc2f0ee72b881b',1,'ImportarInfDieta(char nomeFicheiro[], InfDieta x[]):&#160;Dieta.c'],['../Dieta_8c.html#a3ed1605f364ac1847cfc2f0ee72b881b',1,'ImportarInfDieta(char nomeFicheiro[], InfDieta x[]):&#160;Dieta.c']]],
+  ['importarpacientes_1',['importarpacientes',['../Cabe_xC3_xA7alho_8h.html#a24d346eaa1a0ed46033b8e3b7f0b6986',1,'ImportarPacientes(char nomeFicheiro[], Paciente paciente[]):&#160;Paciente.c'],['../Paciente_8c.html#a24d346eaa1a0ed46033b8e3b7f0b6986',1,'ImportarPacientes(char nomeFicheiro[], Paciente paciente[]):&#160;Paciente.c']]],
+  ['importarplnutricionais_2',['importarplnutricionais',['../Cabe_xC3_xA7alho_8h.html#a8c1dd9e7afaa014b1ecd8d3f250c710b',1,'ImportarPlNutricionais(char nomeFicheiro[], PlNutricionais x[]):&#160;PlNutricionais.c'],['../PlNutricionais_8c.html#a8c1dd9e7afaa014b1ecd8d3f250c710b',1,'ImportarPlNutricionais(char nomeFicheiro[], PlNutricionais x[]):&#160;PlNutricionais.c']]],
+  ['infdieta_3',['infdieta',['../structInfDieta.html',1,'InfDieta'],['../Gabinete_8h.html#a0e1d4fd73b27c6d16586a6f04861107e',1,'InfDieta:&#160;Gabinete.h']]],
+  ['iniciinfdieta_4',['iniciinfdieta',['../Cabe_xC3_xA7alho_8h.html#a6a02685449cedba363242dd1704c407a',1,'IniciInfDieta(InfDieta x[], int tamanho):&#160;Dieta.c'],['../Dieta_8c.html#a6a02685449cedba363242dd1704c407a',1,'IniciInfDieta(InfDieta x[], int tamanho):&#160;Dieta.c']]],
+  ['inicimediacalorias_5',['inicimediacalorias',['../Cabe_xC3_xA7alho_8h.html#acf812068f0cd71b9012cb3663c8690c7',1,'IniciMediaCalorias(Mediacalorias x[], int tamanho):&#160;MediaCalorias.c'],['../MediaCalorias_8c.html#acf812068f0cd71b9012cb3663c8690c7',1,'IniciMediaCalorias(Mediacalorias x[], int tamanho):&#160;MediaCalorias.c']]],
+  ['inicipaciente_6',['IniciPaciente',['../Paciente_8c.html#ad67c4577d9ffeee82d9f7418babb1eab',1,'Paciente.c']]],
+  ['iniciplnutricionais_7',['iniciplnutricionais',['../Cabe_xC3_xA7alho_8h.html#ab28e3c2e30420d57b08e6a5abfa4dcac',1,'IniciPlNutricionais(PlNutricionais x[], int tamanho):&#160;PlNutricionais.c'],['../PlNutricionais_8c.html#ab28e3c2e30420d57b08e6a5abfa4dcac',1,'IniciPlNutricionais(PlNutricionais x[], int tamanho):&#160;PlNutricionais.c']]],
+  ['initabela_8',['initabela',['../Cabe_xC3_xA7alho_8h.html#a114efd63b9cceca502dcdeaf785558ed',1,'IniTabela(int Npac, TabelaPacientes tbpacientes[]):&#160;Tabela.c'],['../Tabela_8c.html#a114efd63b9cceca502dcdeaf785558ed',1,'IniTabela(int Npac, TabelaPacientes tbpacientes[]):&#160;Tabela.c']]]
+];

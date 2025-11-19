@@ -1,0 +1,184 @@
+\doxysection{Referência ao ficheiro C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Pl\+Nutricionais.c}
+\hypertarget{PlNutricionais_8c}{}\label{PlNutricionais_8c}\index{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/PlNutricionais.c@{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/PlNutricionais.c}}
+
+
+Funções para gerir dados dos planos nutricionais.  
+
+
+{\ttfamily \#include "{}Gabinete.\+h"{}}\newline
+{\ttfamily \#include "{}Cabeçalho.\+h"{}}\newline
+Diagrama de dependências de inclusão para Pl\+Nutricionais.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{PlNutricionais_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{PlNutricionais_8c_ab28e3c2e30420d57b08e6a5abfa4dcac}{Inici\+Pl\+Nutricionais}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Inicializa um array do tipo \doxylink{structPlNutricionais}{Pl\+Nutricionais} a 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{PlNutricionais_8c_a8c1dd9e7afaa014b1ecd8d3f250c710b}{Importar\+Pl\+Nutricionais}} (char nome\+Ficheiro\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Importa Pacientes atravez de um ficheiro txt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{PlNutricionais_8c_a95f586c162505fe0ef5afc91efa28854}{Mostra\+Array\+Pl\+Nutricionais}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{PlNutricionais_8c_a038f15d4b8f97b690c22f25f190cb629}{Mostra\+Pl\+Nutricional}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} x\mbox{[}$\,$\mbox{]}, int instancia)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+\Hypertarget{PlNutricionais_8c_a6ed22edf6d99dd63e53bc6c380c4271b}\label{PlNutricionais_8c_a6ed22edf6d99dd63e53bc6c380c4271b} 
+int {\bfseries Guardar\+Ficheiros\+Pl\+Nutricionais\+Bin} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pl\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Guarda array de Pl\+Nutricionaiss num ficheiro bin{\ucr}rio /summary\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array fornecido\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{PlNutricionais_8c_abe940607c1834b886973a4172c8d73f0}{Load\+Ficheiros\+Pl\+Nutricionais\+Bin}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} D\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Carrega Dados de um ficheiro bin{\ucr}rio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{PlNutricionais_8c_a7ebdf252b0cd3f942c59f40d977c9fcb}{buscar\+Plano\+Nutricional}} (\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pl\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPaciente}{Paciente}} x\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} d\mbox{[}$\,$\mbox{]}, int tamanho\+Die, int tamanho\+Pa, int tamanho\+Pl\+Nut, char refeicao\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structData}{Data}} data1, \mbox{\hyperlink{structData}{Data}} data2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Funções para gerir dados dos planos nutricionais. 
+
+\begin{DoxyAuthor}{Autor}
+Grupo 03 / Bruno Dantas nº27958 / Diogo Abreu nº27975/ Paulo Gonçalves nº27966 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2023-\/12-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{PlNutricionais_8c_a7ebdf252b0cd3f942c59f40d977c9fcb}\label{PlNutricionais_8c_a7ebdf252b0cd3f942c59f40d977c9fcb} 
+\index{PlNutricionais.c@{PlNutricionais.c}!buscarPlanoNutricional@{buscarPlanoNutricional}}
+\index{buscarPlanoNutricional@{buscarPlanoNutricional}!PlNutricionais.c@{PlNutricionais.c}}
+\doxysubsubsection{\texorpdfstring{buscarPlanoNutricional()}{buscarPlanoNutricional()}}
+{\footnotesize\ttfamily void buscar\+Plano\+Nutricional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pl\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{d\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho\+Die,  }\item[{int}]{tamanho\+Pa,  }\item[{int}]{tamanho\+Pl\+Nut,  }\item[{char}]{refeicao\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data1,  }\item[{\mbox{\hyperlink{structData}{Data}}}]{data2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em pl} & Array de Planos Nutricionais\\
+\hline
+{\em x} & Array \doxylink{structPaciente}{Paciente}\\
+\hline
+{\em d} & Array de Dietas\\
+\hline
+{\em tamanho\+Die} & Tamanha do array dieta\\
+\hline
+{\em tamanho\+Pa} & Tamanha do array \doxylink{structPaciente}{Paciente}\\
+\hline
+{\em tamanho\+Pl\+Nut} & Tamanha do array Dieta\\
+\hline
+{\em refeicao} & Refei{\ucr}{\ucr}o para comparar\\
+\hline
+{\em data1} & data de inicio do periodo\\
+\hline
+{\em data2} & data de fim do periodo\\
+\hline
+\end{DoxyParams}
+\Hypertarget{PlNutricionais_8c_a8c1dd9e7afaa014b1ecd8d3f250c710b}\label{PlNutricionais_8c_a8c1dd9e7afaa014b1ecd8d3f250c710b} 
+\index{PlNutricionais.c@{PlNutricionais.c}!ImportarPlNutricionais@{ImportarPlNutricionais}}
+\index{ImportarPlNutricionais@{ImportarPlNutricionais}!PlNutricionais.c@{PlNutricionais.c}}
+\doxysubsubsection{\texorpdfstring{ImportarPlNutricionais()}{ImportarPlNutricionais()}}
+{\footnotesize\ttfamily int Importar\+Pl\+Nutricionais (\begin{DoxyParamCaption}\item[{char}]{nome\+Ficheiro\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Importa Pacientes atravez de um ficheiro txt. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro de onde vai ser importado os ficheiros\\
+\hline
+{\em x} & Array de Pl\+Nutricionaiss para onde vai ser importado os ficheiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+i
+\end{DoxyReturn}
+\Hypertarget{PlNutricionais_8c_ab28e3c2e30420d57b08e6a5abfa4dcac}\label{PlNutricionais_8c_ab28e3c2e30420d57b08e6a5abfa4dcac} 
+\index{PlNutricionais.c@{PlNutricionais.c}!IniciPlNutricionais@{IniciPlNutricionais}}
+\index{IniciPlNutricionais@{IniciPlNutricionais}!PlNutricionais.c@{PlNutricionais.c}}
+\doxysubsubsection{\texorpdfstring{IniciPlNutricionais()}{IniciPlNutricionais()}}
+{\footnotesize\ttfamily int Inici\+Pl\+Nutricionais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Inicializa um array do tipo \doxylink{structPlNutricionais}{Pl\+Nutricionais} a 0. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de \doxylink{structPlNutricionais}{Pl\+Nutricionais} que vai ser inicializado\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{PlNutricionais_8c_abe940607c1834b886973a4172c8d73f0}\label{PlNutricionais_8c_abe940607c1834b886973a4172c8d73f0} 
+\index{PlNutricionais.c@{PlNutricionais.c}!LoadFicheirosPlNutricionaisBin@{LoadFicheirosPlNutricionaisBin}}
+\index{LoadFicheirosPlNutricionaisBin@{LoadFicheirosPlNutricionaisBin}!PlNutricionais.c@{PlNutricionais.c}}
+\doxysubsubsection{\texorpdfstring{LoadFicheirosPlNutricionaisBin()}{LoadFicheirosPlNutricionaisBin()}}
+{\footnotesize\ttfamily int Load\+Ficheiros\+Pl\+Nutricionais\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{D\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Carrega Dados de um ficheiro bin{\ucr}rio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array onde ir{\ucr} escrever os dados do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{PlNutricionais_8c_a95f586c162505fe0ef5afc91efa28854}\label{PlNutricionais_8c_a95f586c162505fe0ef5afc91efa28854} 
+\index{PlNutricionais.c@{PlNutricionais.c}!MostraArrayPlNutricionais@{MostraArrayPlNutricionais}}
+\index{MostraArrayPlNutricionais@{MostraArrayPlNutricionais}!PlNutricionais.c@{PlNutricionais.c}}
+\doxysubsubsection{\texorpdfstring{MostraArrayPlNutricionais()}{MostraArrayPlNutricionais()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Pl\+Nutricionais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}
+\Hypertarget{PlNutricionais_8c_a038f15d4b8f97b690c22f25f190cb629}\label{PlNutricionais_8c_a038f15d4b8f97b690c22f25f190cb629} 
+\index{PlNutricionais.c@{PlNutricionais.c}!MostraPlNutricional@{MostraPlNutricional}}
+\index{MostraPlNutricional@{MostraPlNutricional}!PlNutricionais.c@{PlNutricionais.c}}
+\doxysubsubsection{\texorpdfstring{MostraPlNutricional()}{MostraPlNutricional()}}
+{\footnotesize\ttfamily void Mostra\+Pl\+Nutricional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{instancia }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}

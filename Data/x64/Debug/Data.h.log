@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: O diretório intermediário (x64\Debug\) contém arquivos compartilhados de outro projeto (Data.h.vcxproj). Isso pode levar a um comportamento incorreto de limpeza e recompilação.
+  Funcoes.c
+  Data.h.vcxproj -> C:\Ipca\Programacao_imperativa\trab\d-03\Data\x64\Debug\Data.lib
+          1 file(s) copied.
+          1 file(s) copied.

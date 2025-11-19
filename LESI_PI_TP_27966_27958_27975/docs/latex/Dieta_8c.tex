@@ -1,0 +1,136 @@
+\doxysection{Referência ao ficheiro C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Dieta.c}
+\hypertarget{Dieta_8c}{}\label{Dieta_8c}\index{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/Dieta.c@{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/Dieta.c}}
+
+
+Funções para gerir dados das dietas.  
+
+
+{\ttfamily \#include "{}Gabinete.\+h"{}}\newline
+{\ttfamily \#include "{}Cabeçalho.\+h"{}}\newline
+Diagrama de dependências de inclusão para Dieta.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{Dieta_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Dieta_8c_a6a02685449cedba363242dd1704c407a}{Inici\+Inf\+Dieta}} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Inicializa um array do tipo \doxylink{structInfDieta}{Inf\+Dieta} a 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Dieta_8c_a3ed1605f364ac1847cfc2f0ee72b881b}{Importar\+Inf\+Dieta}} (char nome\+Ficheiro\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Importa Pacientes atravez de um ficheiro txt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Dieta_8c_a310d9182617f1552aceccc4c83a81f2c}{Mostra\+Array\+Inf\+Dieta}} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} x\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o Array no Ecra. \end{DoxyCompactList}\item 
+\Hypertarget{Dieta_8c_a404018d909506ac9709cb664eef9bf1a}\label{Dieta_8c_a404018d909506ac9709cb664eef9bf1a} 
+int {\bfseries Guardar\+Ficheiros\+Dieta\+Bin} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} D\mbox{[}$\,$\mbox{]}, int tamanho)
+\begin{DoxyCompactList}\small\item\em Guarda array de Dietas num ficheiro bin{\ucr}rio /summary\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array fornecido\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Dieta_8c_a967377eccf52f0b6e610d00b2d110376}{Load\+Ficheiros\+Dieta\+Bin}} (\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} D\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Carrega Dados de um ficheiro bin{\ucr}rio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Funções para gerir dados das dietas. 
+
+\begin{DoxyAuthor}{Autor}
+Grupo 03 / Bruno Dantas nº27958 / Diogo Abreu nº27975/ Paulo Gonçalves nº27966 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2023-\/12-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{Dieta_8c_a3ed1605f364ac1847cfc2f0ee72b881b}\label{Dieta_8c_a3ed1605f364ac1847cfc2f0ee72b881b} 
+\index{Dieta.c@{Dieta.c}!ImportarInfDieta@{ImportarInfDieta}}
+\index{ImportarInfDieta@{ImportarInfDieta}!Dieta.c@{Dieta.c}}
+\doxysubsubsection{\texorpdfstring{ImportarInfDieta()}{ImportarInfDieta()}}
+{\footnotesize\ttfamily int Importar\+Inf\+Dieta (\begin{DoxyParamCaption}\item[{char}]{nome\+Ficheiro\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Importa Pacientes atravez de um ficheiro txt. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em nome\+Ficheiro} & Nome do ficheiro de onde vai ser importado os ficheiros\\
+\hline
+{\em x} & Array de Dietas para onde vai ser importado os ficheiros\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Dieta_8c_a6a02685449cedba363242dd1704c407a}\label{Dieta_8c_a6a02685449cedba363242dd1704c407a} 
+\index{Dieta.c@{Dieta.c}!IniciInfDieta@{IniciInfDieta}}
+\index{IniciInfDieta@{IniciInfDieta}!Dieta.c@{Dieta.c}}
+\doxysubsubsection{\texorpdfstring{IniciInfDieta()}{IniciInfDieta()}}
+{\footnotesize\ttfamily int Inici\+Inf\+Dieta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Inicializa um array do tipo \doxylink{structInfDieta}{Inf\+Dieta} a 0. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array de \doxylink{structInfDieta}{Inf\+Dieta} que vai ser inicializado\\
+\hline
+{\em tamanho} & tamanho do array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Dieta_8c_a967377eccf52f0b6e610d00b2d110376}\label{Dieta_8c_a967377eccf52f0b6e610d00b2d110376} 
+\index{Dieta.c@{Dieta.c}!LoadFicheirosDietaBin@{LoadFicheirosDietaBin}}
+\index{LoadFicheirosDietaBin@{LoadFicheirosDietaBin}!Dieta.c@{Dieta.c}}
+\doxysubsubsection{\texorpdfstring{LoadFicheirosDietaBin()}{LoadFicheirosDietaBin()}}
+{\footnotesize\ttfamily int Load\+Ficheiros\+Dieta\+Bin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{D\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Carrega Dados de um ficheiro bin{\ucr}rio. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em P} & array onde ir{\ucr} escrever os dados do ficheiro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+
+\end{DoxyReturn}
+\Hypertarget{Dieta_8c_a310d9182617f1552aceccc4c83a81f2c}\label{Dieta_8c_a310d9182617f1552aceccc4c83a81f2c} 
+\index{Dieta.c@{Dieta.c}!MostraArrayInfDieta@{MostraArrayInfDieta}}
+\index{MostraArrayInfDieta@{MostraArrayInfDieta}!Dieta.c@{Dieta.c}}
+\doxysubsubsection{\texorpdfstring{MostraArrayInfDieta()}{MostraArrayInfDieta()}}
+{\footnotesize\ttfamily void Mostra\+Array\+Inf\+Dieta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{x\mbox{[}$\,$\mbox{]},  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o Array no Ecra. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em x} & Array fornecido\\
+\hline
+{\em tamanho} & Tamanho do array\\
+\hline
+\end{DoxyParams}

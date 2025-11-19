@@ -1,0 +1,110 @@
+\doxysection{Referência ao ficheiro C\+:/\+Ipca/\+Programacao\+\_\+imperativa/trab/d-\/03/\+LESI\+\_\+\+PI\+\_\+\+TP\+\_\+27966\+\_\+27958\+\_\+27975/\+Tabela.c}
+\hypertarget{Tabela_8c}{}\label{Tabela_8c}\index{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/Tabela.c@{C:/Ipca/Programacao\_imperativa/trab/d-\/03/LESI\_PI\_TP\_27966\_27958\_27975/Tabela.c}}
+
+
+Mostra uma Tabela com todos os dados pretendidos.  
+
+
+{\ttfamily \#include $<$locale.\+h$>$}\newline
+{\ttfamily \#include "{}Gabinete.\+h"{}}\newline
+{\ttfamily \#include "{}Cabeçalho.\+h"{}}\newline
+Diagrama de dependências de inclusão para Tabela.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{Tabela_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{Tabela_8c_a114efd63b9cceca502dcdeaf785558ed}{Ini\+Tabela}} (int Npac, \mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}} tbpacientes\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Inicialisa a tabela. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{Tabela_8c_abc611c581e25bb65858ad19061dacbb1}{Gerar\+Tabela}} (int Npac, \mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}} tbpacientes\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPaciente}{Paciente}} pa\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structInfDieta}{Inf\+Dieta}} die\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}} pln\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Gerar os dados para a tabela. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{Tabela_8c_a8b37b780f65d021b4b13b9489f8c37f9}{Mostrar\+Tabela}} (int Npac, \mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}} tbpacientes\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Mostra os dados na linha de comados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Mostra uma Tabela com todos os dados pretendidos. 
+
+\begin{DoxyAuthor}{Autor}
+Grupo 03 / Bruno Dantas nº27958 / Diogo Abreu nº27975/ Paulo Gonçalves nº27966 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versão}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2023-\/12-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{Tabela_8c_abc611c581e25bb65858ad19061dacbb1}\label{Tabela_8c_abc611c581e25bb65858ad19061dacbb1} 
+\index{Tabela.c@{Tabela.c}!GerarTabela@{GerarTabela}}
+\index{GerarTabela@{GerarTabela}!Tabela.c@{Tabela.c}}
+\doxysubsubsection{\texorpdfstring{GerarTabela()}{GerarTabela()}}
+{\footnotesize\ttfamily int Gerar\+Tabela (\begin{DoxyParamCaption}\item[{int}]{Npac,  }\item[{\mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}}}]{tbpacientes\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPaciente}{Paciente}}}]{pa\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structInfDieta}{Inf\+Dieta}}}]{die\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{structPlNutricionais}{Pl\+Nutricionais}}}]{pln\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Gerar os dados para a tabela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Npac} & Numero de Pacientes\\
+\hline
+{\em tbpacientes} & Tabela de Pacientes\\
+\hline
+{\em pa} & Array dos Pacientes \\
+\hline
+{\em die} & Array da Dieta\\
+\hline
+{\em pln} & Array do Planoi Nutricional\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{Tabela_8c_a114efd63b9cceca502dcdeaf785558ed}\label{Tabela_8c_a114efd63b9cceca502dcdeaf785558ed} 
+\index{Tabela.c@{Tabela.c}!IniTabela@{IniTabela}}
+\index{IniTabela@{IniTabela}!Tabela.c@{Tabela.c}}
+\doxysubsubsection{\texorpdfstring{IniTabela()}{IniTabela()}}
+{\footnotesize\ttfamily int Ini\+Tabela (\begin{DoxyParamCaption}\item[{int}]{Npac,  }\item[{\mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}}}]{tbpacientes\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Inicialisa a tabela. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Npac} & Numero de Pacientes\\
+\hline
+{\em tbpacientes} & Tabela de Pacientes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1
+\end{DoxyReturn}
+\Hypertarget{Tabela_8c_a8b37b780f65d021b4b13b9489f8c37f9}\label{Tabela_8c_a8b37b780f65d021b4b13b9489f8c37f9} 
+\index{Tabela.c@{Tabela.c}!MostrarTabela@{MostrarTabela}}
+\index{MostrarTabela@{MostrarTabela}!Tabela.c@{Tabela.c}}
+\doxysubsubsection{\texorpdfstring{MostrarTabela()}{MostrarTabela()}}
+{\footnotesize\ttfamily void Mostrar\+Tabela (\begin{DoxyParamCaption}\item[{int}]{Npac,  }\item[{\mbox{\hyperlink{structTabelaPacientes}{Tabela\+Pacientes}}}]{tbpacientes\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Mostra os dados na linha de comados. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Npac} & Numero de Pacientes\\
+\hline
+{\em tbpacientes} & Tabela de Pacientes\\
+\hline
+\end{DoxyParams}
